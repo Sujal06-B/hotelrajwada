@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --maroon: #520122;
+    --maroon-deep: #3a0017;
+    --maroon-light: #730634;
+    --saffron: #e05318;
+    --amber: #d97706;
+    --bg-page: #fdfbf7;
+    --bg-surface: #ffffff;
+    --bg-subtle: #f7f3ec;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-subtle: #e8e2d8;
+  }
+
+  body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-royal {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #fdfbf7;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1c7ba;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #520122;
+}
+
+/* Royal Gradients & Accents based on Logo */
+.maroon-gradient {
+  background: linear-gradient(135deg, #520122 0%, #3a0017 100%);
+}
+
+.saffron-gradient {
+  background: linear-gradient(135deg, #e05318 0%, #c2410c 100%);
+}
+
+.maroon-text-gradient {
+  background: linear-gradient(135deg, #520122 0%, #800d38 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.saffron-text-gradient {
+  background: linear-gradient(135deg, #e05318 0%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Smooth Moving Reviews Marquee (Left-to-Right with Hover Pause) */
+@keyframes marqueeScrollLTR {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.marquee-track-ltr {
+  display: flex;
+  width: max-content;
+  animation: marqueeScrollLTR 42s linear infinite;
+  will-change: transform;
+}
+
+.marquee-container:hover .marquee-track-ltr {
+  animation-play-state: paused !important;
+}
