@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronRight, UtensilsCrossed, Star, Users, Award, ChevronLeft } from 'lucide-react';
+import { ChevronRight, UtensilsCrossed, Star, Users, Award, ChevronLeft, Building2 } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon.jsx';
 
 const heroSlides = [
@@ -91,8 +91,8 @@ export default function Hero({ profile }) {
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center py-12">
         
         {/* Eyebrow Pill */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/95 text-[#520122] text-xs sm:text-sm font-bold mb-4 shadow-xl border border-white">
-          <Star className="w-3.5 h-3.5 fill-[#e05318] text-[#e05318]" />
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/95 text-[#520122] text-xs sm:text-sm font-bold mb-4 shadow-xl border border-amber-300/40">
+          <span className="text-[#e05318] font-bold text-sm">✦</span>
           <span>{heroSlides[current].eyebrow}</span>
         </div>
 
@@ -131,37 +131,37 @@ export default function Hero({ profile }) {
           </a>
         </div>
 
-        {/* Feature Highlights Row: Minimal Clean Floating Badges */}
+        {/* Royal Heritage Proof Ribbon (Clean, Human-Crafted Hospitality Hierarchy) */}
         <div className="pt-6 border-t border-white/20 grid grid-cols-2 md:grid-cols-4 gap-3 text-left">
-          <div className="flex items-center gap-2.5 p-2.5 rounded-xl bg-black/45 border border-white/25 text-white shadow-xl">
-            <span className="text-amber-400 font-bold text-base">★</span>
+          <div className="flex items-center gap-2.5 p-3 rounded-2xl bg-black/45 backdrop-blur-md border border-amber-300/30 text-white shadow-xl hover:border-amber-400/60 transition-all">
+            <span className="text-amber-400 font-bold text-lg">★</span>
             <div>
               <p className="text-xs font-bold text-white drop-shadow">4.9 / 5 Rating</p>
-              <p className="text-[10px] text-stone-200">Google Reviews</p>
+              <p className="text-[10px] text-stone-200">Google Verified</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-2.5 p-2.5 rounded-xl bg-black/45 border border-white/25 text-white shadow-xl">
-            <Users className="w-4 h-4 text-amber-300" />
+          <div className="flex items-center gap-2.5 p-3 rounded-2xl bg-black/45 backdrop-blur-md border border-amber-300/30 text-white shadow-xl hover:border-amber-400/60 transition-all">
+            <Users className="w-5 h-5 text-amber-300 shrink-0" />
             <div>
               <p className="text-xs font-bold text-white drop-shadow">कौटुंबिक बैठक</p>
-              <p className="text-[10px] text-stone-200">Family Friendly</p>
+              <p className="text-[10px] text-stone-200">Family AC Dining</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-2.5 p-2.5 rounded-xl bg-black/45 border border-white/25 text-white shadow-xl">
-            <Award className="w-4 h-4 text-amber-300" />
+          <div className="flex items-center gap-2.5 p-3 rounded-2xl bg-black/45 backdrop-blur-md border border-amber-300/30 text-white shadow-xl hover:border-amber-400/60 transition-all">
+            <Award className="w-5 h-5 text-amber-300 shrink-0" />
             <div>
               <p className="text-xs font-bold text-white drop-shadow">अस्सल चव</p>
               <p className="text-[10px] text-stone-200">तांबडा-पांढरा रस्सा</p>
             </div>
           </div>
 
-          <div className="flex items-center gap-2.5 p-2.5 rounded-xl bg-black/45 border border-white/25 text-white shadow-xl">
-            <span className="text-base">🏛️</span>
+          <div className="flex items-center gap-2.5 p-3 rounded-2xl bg-black/45 backdrop-blur-md border border-amber-300/30 text-white shadow-xl hover:border-amber-400/60 transition-all">
+            <Building2 className="w-5 h-5 text-amber-300 shrink-0" />
             <div>
               <p className="text-xs font-bold text-white drop-shadow">मंगल कार्यालय</p>
-              <p className="text-[10px] text-stone-200">समारंभांसाठी हॉल</p>
+              <p className="text-[10px] text-stone-200">२५०+ आसन क्षमता</p>
             </div>
           </div>
         </div>

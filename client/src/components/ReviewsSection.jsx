@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, ExternalLink, Maximize2, Sparkles, CheckCircle2 } from 'lucide-react';
+import { Star, ExternalLink, Maximize2, CheckCircle2 } from 'lucide-react';
 import InstagramIcon from './InstagramIcon.jsx';
 
 const googleReviewsData = [

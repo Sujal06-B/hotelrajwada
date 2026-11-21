@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, Menu, X, Sparkles } from 'lucide-react';
+import { Phone, Menu, X } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon.jsx';
 import InstagramIcon from './InstagramIcon.jsx';
 
@@ -34,8 +34,8 @@ export default function Navbar({ profile }) {
       <div className="bg-[#f9f5ef] border-b border-[#e8e0d5] py-2 px-4 text-xs font-medium text-[#4a5568]">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2">
-            <Sparkles className="w-3.5 h-3.5 text-[#e05318]" />
-            <span className="font-medium text-[#2d3748]">✦ अस्सल चव • आपुलकीची सेवा • Gadhinglaj</span>
+            <span className="text-[#e05318] font-bold">✦</span>
+            <span className="font-medium text-[#2d3748]">अस्सल चव • आपुलकीची सेवा • गडहिंग्लज (Gadhinglaj)</span>
           </div>
           <div className="flex items-center gap-4">
             <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold ${

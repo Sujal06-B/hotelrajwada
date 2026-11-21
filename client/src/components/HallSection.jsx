@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Calendar, Users, HeartHandshake, FileText } from 'lucide-react';
+import { Landmark, Calendar, Users, HeartHandshake, FileText, UtensilsCrossed } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon.jsx';
 
 export default function HallSection({ profile }) {
@@ -36,9 +36,9 @@ export default function HallSection({ profile }) {
 
           {/* Hall Description */}
           <div className="order-1 lg:order-2">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold uppercase tracking-wider mb-4 shadow-xs">
-              <Sparkles className="w-3.5 h-3.5 text-[#e05318]" />
-              CELEBRATION &amp; EVENTS
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold tracking-wider mb-4 shadow-xs">
+              <Landmark className="w-3.5 h-3.5 text-[#e05318]" />
+              <span>मंगल कार्यालय • CELEBRATION &amp; EVENTS</span>
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-bold font-royal text-[#520122] mb-6 leading-tight">
@@ -71,7 +71,7 @@ export default function HallSection({ profile }) {
               </div>
               <div className="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-stone-200/90 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_24px_-4px_rgba(224,83,24,0.18)] hover:border-[#e05318]/40 hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
                 <div className="p-2 rounded-lg bg-orange-50 text-[#e05318] group-hover:bg-[#e05318] group-hover:text-white transition-colors">
-                  <Sparkles className="w-4 h-4 shrink-0" />
+                  <UtensilsCrossed className="w-4 h-4 shrink-0" />
                 </div>
                 <span className="text-xs sm:text-sm font-semibold text-[#1e293b] group-hover:text-[#e05318] transition-colors">शाही केटरिंग व जेवण</span>
               </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Clock, Navigation, Sparkles, ChevronRight, CheckCircle2 } from 'lucide-react';
+import { MapPin, Phone, Clock, Navigation, ChevronRight, CheckCircle2, UtensilsCrossed, Landmark, ShoppingBag, Headphones } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon.jsx';
 import InstagramIcon from './InstagramIcon.jsx';
 
@@ -21,9 +21,9 @@ export default function ContactSection({ profile }) {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold uppercase tracking-wider mb-3 shadow-xs">
-            <Sparkles className="w-3.5 h-3.5 text-[#e05318]" />
-            ROYAL CONCIERGE &amp; RESERVATIONS
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold tracking-wider mb-3 shadow-xs">
+            <Headphones className="w-3.5 h-3.5 text-[#e05318]" />
+            <span>शाही स्वागत कक्ष • RESERVATIONS</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-bold font-royal text-[#520122] mb-3">
             चला, भेटूया <em className="saffron-text-gradient not-italic">Yes Rajvada मध्ये!</em>
@@ -161,9 +161,9 @@ export default function ContactSection({ profile }) {
 
           </div>
 
-          {/* 3. Quick Concierge Topic Chips */}
+          {/* 3. Quick Concierge Topic Chips (Vector SVG Only, No Emojis) */}
           <div className="bg-white rounded-2xl p-6 border border-stone-200/80 shadow-xs text-center">
-            <p className="text-xs font-bold text-[#520122] uppercase tracking-wider mb-3.5">
+            <p className="text-xs font-bold text-[#520122] tracking-wider mb-3.5">
               झटपट WhatsApp चौकशीचे पर्याय (Quick Reservation Options):
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
@@ -171,30 +171,30 @@ export default function ContactSection({ profile }) {
                 href={createWaLink('नमस्कार Yes Rajvada! मला टेबल उपलब्धतेबद्दल चौकशी करायची आहे.')}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 rounded-xl bg-[#fdfbf7] hover:bg-emerald-50 text-xs font-semibold text-stone-700 hover:text-emerald-700 border border-stone-200 hover:border-emerald-300 transition-all flex items-center gap-2 shadow-2xs"
+                className="px-4 py-2.5 rounded-xl bg-[#fdfbf7] hover:bg-emerald-50 text-xs font-semibold text-stone-700 hover:text-emerald-700 border border-stone-200 hover:border-emerald-300 transition-all flex items-center gap-2 shadow-2xs hover:-translate-y-0.5"
               >
-                <WhatsAppIcon className="w-3.5 h-3.5 fill-emerald-600" />
-                <span>🍽️ टेबल उपलब्धता व बुकिंग</span>
+                <UtensilsCrossed className="w-4 h-4 text-emerald-600" />
+                <span>टेबल उपलब्धता व बुकिंग</span>
               </a>
 
               <a
                 href={createWaLink('नमस्कार Yes Rajvada! मला मंगल कार्यालय (Celebration Hall) बुकिंगबद्दल माहिती हवी आहे.')}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 rounded-xl bg-[#fdfbf7] hover:bg-emerald-50 text-xs font-semibold text-stone-700 hover:text-emerald-700 border border-stone-200 hover:border-emerald-300 transition-all flex items-center gap-2 shadow-2xs"
+                className="px-4 py-2.5 rounded-xl bg-[#fdfbf7] hover:bg-emerald-50 text-xs font-semibold text-stone-700 hover:text-emerald-700 border border-stone-200 hover:border-emerald-300 transition-all flex items-center gap-2 shadow-2xs hover:-translate-y-0.5"
               >
-                <WhatsAppIcon className="w-3.5 h-3.5 fill-emerald-600" />
-                <span>🏛️ मंगल कार्यालय (Hall) चौकशी</span>
+                <Landmark className="w-4 h-4 text-emerald-600" />
+                <span>मंगल कार्यालय (Hall) चौकशी</span>
               </a>
 
               <a
                 href={createWaLink('नमस्कार Yes Rajvada! मला स्पेशल थाळी आणि आजच्या मेनूबद्दल माहिती हवी आहे.')}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 rounded-xl bg-[#fdfbf7] hover:bg-emerald-50 text-xs font-semibold text-stone-700 hover:text-emerald-700 border border-stone-200 hover:border-emerald-300 transition-all flex items-center gap-2 shadow-2xs"
+                className="px-4 py-2.5 rounded-xl bg-[#fdfbf7] hover:bg-emerald-50 text-xs font-semibold text-stone-700 hover:text-emerald-700 border border-stone-200 hover:border-emerald-300 transition-all flex items-center gap-2 shadow-2xs hover:-translate-y-0.5"
               >
-                <WhatsAppIcon className="w-3.5 h-3.5 fill-emerald-600" />
-                <span>🍱 स्पेशल थाळी मेनू व पार्सल</span>
+                <ShoppingBag className="w-4 h-4 text-emerald-600" />
+                <span>स्पेशल थाळी मेनू व पार्सल</span>
               </a>
             </div>
           </div>

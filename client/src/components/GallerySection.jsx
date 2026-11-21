@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sparkles, Maximize2 } from 'lucide-react';
+import { Camera, Maximize2 } from 'lucide-react';
 
 const galleryTabs = ['All', 'Hotel', 'Hall', 'Special Thali'];
 
@@ -29,9 +29,9 @@ export default function GallerySection({ photos, onSelectPhoto }) {
         
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold uppercase tracking-wider mb-3 shadow-xs">
-            <Sparkles className="w-3.5 h-3.5 text-[#e05318]" />
-            PHOTO GALLERY
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold tracking-wider mb-3 shadow-xs">
+            <Camera className="w-3.5 h-3.5 text-[#e05318]" />
+            <span>क्षणचित्रे • PHOTO GALLERY</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-bold font-royal text-[#520122] mb-3">
             आठवणींची <em className="saffron-text-gradient not-italic">गॅलरी</em>

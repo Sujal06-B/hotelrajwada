@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2, FileText, Sparkles } from 'lucide-react';
+import { CheckCircle2, FileText, BookOpen, Utensils, ShieldCheck, Building2 } from 'lucide-react';
 
 export default function AboutSection({ profile }) {
   return (
@@ -15,7 +15,7 @@ export default function AboutSection({ profile }) {
                 alt="Yes Rajvada Front Entrance" 
                 className="w-full h-[380px] sm:h-[450px] object-cover hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent"></div>
               
               <div className="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-stone-200 shadow-md">
                 <p className="text-xs uppercase tracking-widest text-[#e05318] font-bold">GADHINGLAJ, KOLHAPUR</p>
@@ -23,18 +23,23 @@ export default function AboutSection({ profile }) {
               </div>
             </div>
 
-            {/* Overlapping Floating Badge */}
-            <div className="hidden sm:block absolute -bottom-5 -right-5 bg-gradient-to-br from-[#520122] to-[#730634] p-5 rounded-2xl border-2 border-white shadow-2xl max-w-[210px] text-white">
-              <span className="text-3xl font-royal font-bold text-white">100%</span>
-              <p className="text-xs font-medium text-rose-100 mt-1">अस्सल पारंपरिक पद्धतीची गावरान मेजवानी</p>
+            {/* Overlapping Heritage Seal Badge (Organic, Non-AI) */}
+            <div className="hidden sm:flex absolute -bottom-5 -right-3 bg-white/95 backdrop-blur-md p-4 rounded-2xl border-2 border-amber-300/40 shadow-xl max-w-[220px] items-center gap-3">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#520122] to-[#730634] text-amber-300 flex items-center justify-center font-royal font-bold text-lg shrink-0 shadow-sm">
+                २५+
+              </div>
+              <div>
+                <p className="text-xs font-bold text-[#520122]">वर्षे परंपरा</p>
+                <p className="text-[11px] text-[#64748b] leading-tight">अस्सल गावरान चव व आपुलकीचे आदरातिथ्य</p>
+              </div>
             </div>
           </div>
 
           {/* Text Content */}
           <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold uppercase tracking-wider mb-4 shadow-xs">
-              <Sparkles className="w-3.5 h-3.5 text-[#e05318]" />
-              ABOUT YES RAJVADA
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold tracking-wider mb-4 shadow-xs">
+              <BookOpen className="w-3.5 h-3.5 text-[#e05318]" />
+              <span>आमचा वारसा • HERITAGE &amp; TASTE</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-royal text-[#520122] mb-6 leading-tight">
@@ -47,20 +52,31 @@ export default function AboutSection({ profile }) {
             </p>
 
             <div className="space-y-3.5 mb-8">
-              <div className="flex items-start gap-3 p-3.5 bg-white rounded-xl border border-stone-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_24px_-4px_rgba(82,1,34,0.14)] hover:-translate-y-1 hover:border-[#520122]/30 transition-all duration-300 cursor-pointer group">
-                <CheckCircle2 className="w-5 h-5 text-[#520122] group-hover:text-[#e05318] shrink-0 mt-0.5 transition-colors" />
+              {/* Feature 1: Kolhapuri Non-Veg Thali with FSSAI-style Non-Veg marker */}
+              <div className="flex items-start gap-3.5 p-3.5 bg-white rounded-xl border border-stone-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_24px_-4px_rgba(82,1,34,0.14)] hover:-translate-y-1 hover:border-[#520122]/30 transition-all duration-300 cursor-pointer group">
+                <div className="w-5 h-5 rounded-md border border-rose-600 flex items-center justify-center shrink-0 mt-0.5 bg-rose-50" title="Non-Vegetarian Authentic">
+                  <div className="w-2.5 h-2.5 rounded-full bg-rose-700"></div>
+                </div>
                 <p className="text-sm text-[#1e293b]">
                   <b className="text-[#520122]">अस्सल कोल्हापुरी थाळी:</b> तांबडा रस्सा, पांढरा रस्सा, गरमागरम बाजरीची भाकरी आणि खमंग सुक्का मटण/चिकन.
                 </p>
               </div>
-              <div className="flex items-start gap-3 p-3.5 bg-white rounded-xl border border-stone-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_24px_-4px_rgba(82,1,34,0.14)] hover:-translate-y-1 hover:border-[#520122]/30 transition-all duration-300 cursor-pointer group">
-                <CheckCircle2 className="w-5 h-5 text-[#520122] group-hover:text-[#e05318] shrink-0 mt-0.5 transition-colors" />
+
+              {/* Feature 2: Veg Family Seating with FSSAI-style Veg marker */}
+              <div className="flex items-start gap-3.5 p-3.5 bg-white rounded-xl border border-stone-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_24px_-4px_rgba(82,1,34,0.14)] hover:-translate-y-1 hover:border-[#520122]/30 transition-all duration-300 cursor-pointer group">
+                <div className="w-5 h-5 rounded-md border border-emerald-600 flex items-center justify-center shrink-0 mt-0.5 bg-emerald-50" title="Pure Vegetarian Option">
+                  <div className="w-2.5 h-2.5 rounded-full bg-emerald-600"></div>
+                </div>
                 <p className="text-sm text-[#1e293b]">
                   <b className="text-[#520122]">स्वच्छ व कौटुंबिक वातावरण:</b> कुटुंबीय, मित्रमंडळी आणि लहान मुलांसाठी सुरक्षित व प्रशस्त डायनिंग व्यवस्था.
                 </p>
               </div>
-              <div className="flex items-start gap-3 p-3.5 bg-white rounded-xl border border-stone-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_24px_-4px_rgba(82,1,34,0.14)] hover:-translate-y-1 hover:border-[#520122]/30 transition-all duration-300 cursor-pointer group">
-                <CheckCircle2 className="w-5 h-5 text-[#520122] group-hover:text-[#e05318] shrink-0 mt-0.5 transition-colors" />
+
+              {/* Feature 3: Banquet Hall with Landmark SVG */}
+              <div className="flex items-start gap-3.5 p-3.5 bg-white rounded-xl border border-stone-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_24px_-4px_rgba(82,1,34,0.14)] hover:-translate-y-1 hover:border-[#520122]/30 transition-all duration-300 cursor-pointer group">
+                <div className="w-5 h-5 rounded-md border border-amber-600 flex items-center justify-center shrink-0 mt-0.5 bg-amber-50">
+                  <Building2 className="w-3.5 h-3.5 text-amber-700" />
+                </div>
                 <p className="text-sm text-[#1e293b]">
                   <b className="text-[#520122]">समारंभांसाठी भव्य हॉल:</b> साखरपुडा, हळद, वाढदिवस आणि इतर शुभकार्यांसाठी प्रशस्त वातानुकूलित जागा.
                 </p>

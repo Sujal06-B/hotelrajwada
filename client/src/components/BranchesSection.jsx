@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Clock, Navigation, Sparkles } from 'lucide-react';
+import { MapPin, Phone, Clock, Navigation } from 'lucide-react';
 import { defaultBranches } from '../data/defaultData.js';
 
 export default function BranchesSection({ profile }) {
@@ -15,9 +15,9 @@ export default function BranchesSection({ profile }) {
         
         {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold uppercase tracking-wider mb-3 shadow-xs">
-            <Sparkles className="w-3.5 h-3.5 text-[#e05318]" />
-            OUR LOCATION &amp; BRANCH
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold tracking-wider mb-3 shadow-xs">
+            <MapPin className="w-3.5 h-3.5 text-[#e05318]" />
+            <span>हॉटेल पत्ता • OUR LOCATION</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-bold font-royal text-[#520122] mb-3">
             आमची शाखा <em className="saffron-text-gradient not-italic">गडहिंग्लज</em>
