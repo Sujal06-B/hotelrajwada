@@ -42,33 +42,33 @@ const staffMembers = [
 
 export default function StaffSection() {
   return (
-    <section id="staff" className="py-20 bg-[#f9f6f0] border-t border-[#ede7de]">
+    <section id="staff" className="py-12 sm:py-20 bg-[#f9f6f0] border-t border-[#ede7de]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Section Heading */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold tracking-wider mb-3 shadow-xs">
+        <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-14">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold tracking-wider mb-2.5 sm:mb-3 shadow-xs">
             <Users2 className="w-3.5 h-3.5 text-[#e05318]" />
             <span>आमचे निष्ठावान सहकारी • OUR TEAM</span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-bold font-royal text-[#520122] mb-3">
+          <h2 className="text-2xl sm:text-5xl font-bold font-royal text-[#520122] mb-2 sm:mb-3">
             आमची <em className="saffron-text-gradient not-italic">कुशल टीम (Hospitality Staff)</em>
           </h2>
-          <p className="text-sm sm:text-base text-[#64748b]">
+          <p className="text-xs sm:text-base text-[#64748b]">
             तुमच्या सेवेसाठी आणि अस्सल चव टिकवून ठेवण्यासाठी तत्पर असणारे आमचे निष्ठावान सहकारी.
           </p>
         </div>
 
-        {/* Staff Grid with Professional Real Portrait Images */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Staff Grid: 2-col on mobile, 4-col on desktop for a compact, clean look */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {staffMembers.map((member, idx) => (
             <div 
               key={idx}
-              className="bg-white rounded-2xl overflow-hidden border border-stone-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_24px_50px_-8px_rgba(82,1,34,0.22)] hover:-translate-y-2 hover:border-[#520122]/40 transition-all duration-300 ease-out flex flex-col justify-between group cursor-pointer"
+              className="bg-white rounded-2xl overflow-hidden border border-stone-200/90 shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_45px_-8px_rgba(82,1,34,0.20)] hover:-translate-y-1.5 hover:border-[#520122]/40 transition-all duration-300 ease-out flex flex-col justify-between group cursor-pointer"
             >
               <div>
-                {/* Real Demo Portrait Image */}
-                <div className="relative aspect-4/5 overflow-hidden bg-stone-100">
+                {/* Portrait Image */}
+                <div className="relative aspect-square sm:aspect-4/5 overflow-hidden bg-stone-100">
                   <img
                     src={member.photo}
                     alt={member.name}
@@ -81,42 +81,42 @@ export default function StaffSection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent group-hover:from-black/75 transition-colors duration-300"></div>
                   
                   {/* Badge */}
-                  <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-bold bg-[#520122] text-white shadow-md group-hover:bg-[#e05318] transition-colors">
+                  <span className="absolute top-2 left-2 sm:top-3 sm:left-3 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[9px] sm:text-[11px] font-bold bg-[#520122] text-white shadow-md group-hover:bg-[#e05318] transition-colors">
                     {member.badge}
                   </span>
 
                   {/* Experience Tag */}
-                  <span className="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg text-[10px] font-semibold bg-white/95 text-[#1e293b] backdrop-blur-sm shadow group-hover:bg-amber-50 group-hover:text-[#520122] transition-colors">
+                  <span className="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 px-1.5 py-0.5 sm:px-2.5 sm:py-1 rounded-md sm:rounded-lg text-[9px] sm:text-[10px] font-semibold bg-white/95 text-[#1e293b] backdrop-blur-sm shadow">
                     {member.exp}
                   </span>
                 </div>
 
                 {/* Info */}
-                <div className="p-5 text-left">
-                  <h3 className="font-bold text-lg text-[#1e293b] group-hover:text-[#520122] transition-colors font-royal">
+                <div className="p-3 sm:p-5 text-left">
+                  <h3 className="font-bold text-sm sm:text-lg text-[#1e293b] group-hover:text-[#520122] transition-colors font-royal leading-snug">
                     {member.name}
                   </h3>
-                  <p className="text-xs font-bold text-[#e05318] mt-0.5">
+                  <p className="text-[10px] sm:text-xs font-bold text-[#e05318] mt-0.5 leading-tight">
                     {member.marathiRole}
                   </p>
-                  <p className="text-[11px] text-[#64748b] font-medium mb-3">
+                  <p className="hidden sm:block text-[11px] text-[#64748b] font-medium mb-2">
                     {member.role}
                   </p>
 
-                  <p className="text-xs text-[#475569] leading-relaxed">
+                  <p className="hidden sm:block text-xs text-[#475569] leading-relaxed">
                     {member.bio}
                   </p>
                 </div>
               </div>
 
-              <div className="px-5 pb-5 pt-0">
-                <div className="pt-3 border-t border-stone-100 flex items-center justify-between text-[11px] font-semibold text-[#520122]">
-                  <span className="flex items-center gap-1.5 text-emerald-700">
-                    <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                    अधिकृत स्टाफ
+              <div className="px-3 pb-3 sm:px-5 sm:pb-5 pt-0">
+                <div className="pt-2 sm:pt-3 border-t border-stone-100 flex items-center justify-between text-[10px] sm:text-[11px] font-semibold text-[#520122]">
+                  <span className="flex items-center gap-1 sm:gap-1.5 text-emerald-700">
+                    <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-600" />
+                    <span>अधिकृत</span>
                   </span>
-                  <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-50 text-amber-800 border border-amber-200">
-                    प्रमाणित सहकारी
+                  <span className="px-1.5 py-0.5 rounded text-[9px] sm:text-[10px] font-bold bg-amber-50 text-amber-800 border border-amber-200">
+                    प्रमाणित
                   </span>
                 </div>
               </div>

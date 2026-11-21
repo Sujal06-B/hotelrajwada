@@ -83,3 +83,12 @@
 .marquee-container:hover .marquee-track-ltr {
   animation-play-state: paused !important;
 }
+
+/* Hide scrollbar for horizontal swipeable tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

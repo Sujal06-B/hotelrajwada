@@ -16,19 +16,19 @@ export default function ContactSection({ profile }) {
   };
 
   return (
-    <section id="contact" className="py-20 bg-[#f9f6f0] border-t border-[#ede7de]">
+    <section id="contact" className="py-12 sm:py-20 bg-[#f9f6f0] border-t border-[#ede7de]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold tracking-wider mb-3 shadow-xs">
+        <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-14">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold tracking-wider mb-2.5 sm:mb-3 shadow-xs">
             <Headphones className="w-3.5 h-3.5 text-[#e05318]" />
             <span>शाही स्वागत कक्ष • RESERVATIONS</span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-bold font-royal text-[#520122] mb-3">
+          <h2 className="text-2xl sm:text-5xl font-bold font-royal text-[#520122] mb-2 sm:mb-3">
             चला, भेटूया <em className="saffron-text-gradient not-italic">Yes Rajvada मध्ये!</em>
           </h2>
-          <p className="text-sm sm:text-base text-[#64748b]">
+          <p className="text-xs sm:text-base text-[#64748b]">
             अस्सल कोल्हापुरी आदरातिथ्य अनुभवण्यासाठी थेट संपर्क साधा किंवा खालील पर्यायांद्वारे चौकशी करा.
           </p>
         </div>
@@ -37,7 +37,7 @@ export default function ContactSection({ profile }) {
         <div className="space-y-6">
           
           {/* 1. Primary Location & Direct Hotline Banner */}
-          <div className="bg-gradient-to-br from-[#520122] via-[#63042b] to-[#3a0017] text-white rounded-3xl p-7 sm:p-10 shadow-[0_12px_36px_rgba(82,1,34,0.25)] hover:shadow-[0_24px_55px_-10px_rgba(82,1,34,0.38)] transition-all duration-500 border-2 border-amber-300/30 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 group">
+          <div className="bg-gradient-to-br from-[#520122] via-[#63042b] to-[#3a0017] text-white rounded-3xl p-5 sm:p-10 shadow-[0_12px_36px_rgba(82,1,34,0.25)] hover:shadow-[0_24px_55px_-10px_rgba(82,1,34,0.38)] transition-all duration-500 border-2 border-amber-300/30 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 sm:gap-8 group">
             <div className="space-y-3 max-w-xl">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-amber-300 text-xs font-bold uppercase tracking-wider border border-white/15">
                 <MapPin className="w-3.5 h-3.5 text-amber-300" />

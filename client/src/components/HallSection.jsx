@@ -7,28 +7,28 @@ export default function HallSection({ profile }) {
   const waHallUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent('नमस्कार Yes Rajvada! मला मंगल कार्यालय (Celebration Hall) बुकिंगबद्दल चौकशी करायची आहे.')}`;
 
   return (
-    <section id="hall" className="py-20 bg-[#f9f6f0] border-t border-[#ede7de] relative overflow-hidden">
+    <section id="hall" className="py-12 sm:py-20 bg-[#f9f6f0] border-t border-[#ede7de] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           
           {/* Hall Visuals */}
           <div className="order-2 lg:order-1 relative group">
-            <div className="rounded-2xl overflow-hidden border-4 border-white shadow-[0_12px_36px_rgba(0,0,0,0.12)] group-hover:shadow-[0_24px_50px_-8px_rgba(82,1,34,0.22)] transition-all duration-500">
+            <div className="rounded-2xl overflow-hidden border-2 sm:border-4 border-white shadow-[0_12px_36px_rgba(0,0,0,0.12)] group-hover:shadow-[0_24px_50px_-8px_rgba(82,1,34,0.22)] transition-all duration-500">
               <img 
                 src="./hero2.webp" 
                 alt="Yes Rajvada Celebration Hall" 
-                className="w-full h-[360px] sm:h-[420px] object-cover group-hover:scale-106 transition-transform duration-700 ease-out"
+                className="w-full h-[260px] sm:h-[420px] object-cover group-hover:scale-106 transition-transform duration-700 ease-out"
               />
             </div>
             
-            <div className="absolute -bottom-5 left-5 right-5 sm:left-auto sm:right-5 sm:max-w-xs p-4 rounded-xl bg-white/95 backdrop-blur-md border border-stone-200 shadow-[0_10px_30px_rgba(0,0,0,0.12)] hover:shadow-[0_16px_36px_rgba(82,1,34,0.18)] hover:-translate-y-1 transition-all duration-300">
+            <div className="absolute -bottom-4 left-3 right-3 sm:-bottom-5 sm:left-auto sm:right-5 sm:max-w-xs p-3 sm:p-4 rounded-xl bg-white/95 backdrop-blur-md border border-stone-200 shadow-[0_10px_30px_rgba(0,0,0,0.12)] hover:shadow-[0_16px_36px_rgba(82,1,34,0.18)] hover:-translate-y-1 transition-all duration-300">
               <div className="flex items-center gap-3">
-                <div className="w-11 h-11 rounded-full bg-rose-50 border border-rose-200 flex items-center justify-center text-[#520122] shrink-0 font-bold text-sm shadow-xs">
+                <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-rose-50 border border-rose-200 flex items-center justify-center text-[#520122] shrink-0 font-bold text-xs sm:text-sm shadow-xs">
                   250+
                 </div>
                 <div>
                   <p className="text-xs font-bold text-[#1e293b]">हॉल क्षमता (Seating Capacity)</p>
-                  <p className="text-[11px] text-[#64748b]">लहान व मोठ्या समारंभांसाठी सुसज्ज</p>
+                  <p className="text-[10px] sm:text-[11px] text-[#64748b]">लहान व मोठ्या समारंभांसाठी सुसज्ज</p>
                 </div>
               </div>
             </div>
@@ -36,17 +36,17 @@ export default function HallSection({ profile }) {
 
           {/* Hall Description */}
           <div className="order-1 lg:order-2">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold tracking-wider mb-4 shadow-xs">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold tracking-wider mb-3 sm:mb-4 shadow-xs">
               <Landmark className="w-3.5 h-3.5 text-[#e05318]" />
               <span>मंगल कार्यालय • CELEBRATION &amp; EVENTS</span>
             </div>
 
-            <h2 className="text-3xl sm:text-5xl font-bold font-royal text-[#520122] mb-6 leading-tight">
+            <h2 className="text-2xl sm:text-5xl font-bold font-royal text-[#520122] mb-3 sm:mb-6 leading-tight">
               तुमचा खास दिवस, <br />
               <em className="saffron-text-gradient not-italic">आमची खास जागा.</em>
             </h2>
 
-            <p className="text-base text-[#334155] leading-relaxed mb-6 font-normal">
+            <p className="text-xs sm:text-base text-[#334155] leading-relaxed mb-4 sm:mb-6 font-normal">
               लग्नसमारंभ, साखरपुडा, हळद, वाढदिवस आणि इतर कौटुंबिक किंवा कार्यालयीन कार्यक्रमांसाठी Yes Rajvada चे भव्य वातानुकूलित मंगल कार्यालय व केटरिंग सेवा सज्ज आहे.
             </p>
 

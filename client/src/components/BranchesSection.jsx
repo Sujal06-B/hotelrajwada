@@ -10,19 +10,19 @@ export default function BranchesSection({ profile }) {
   const mapUrl = profile?.mapUrl || "https://maps.google.com/?q=Yes+Rajvada+Gadhinglaj";
 
   return (
-    <section id="branches" className="py-20 bg-[#f9f6f0] border-t border-[#ede7de]">
+    <section id="branches" className="py-12 sm:py-20 bg-[#f9f6f0] border-t border-[#ede7de]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Section Heading */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold tracking-wider mb-3 shadow-xs">
+        <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-14">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold tracking-wider mb-2.5 sm:mb-3 shadow-xs">
             <MapPin className="w-3.5 h-3.5 text-[#e05318]" />
             <span>हॉटेल पत्ता • OUR LOCATION</span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-bold font-royal text-[#520122] mb-3">
+          <h2 className="text-2xl sm:text-5xl font-bold font-royal text-[#520122] mb-2 sm:mb-3">
             आमची शाखा <em className="saffron-text-gradient not-italic">गडहिंग्लज</em>
           </h2>
-          <p className="text-sm sm:text-base text-[#64748b]">
+          <p className="text-xs sm:text-base text-[#64748b]">
             शांत व रम्य परिसर, प्रशस्त पार्किंग आणि कौटुंबिक जेवणासाठी उत्तम ठिकाण.
           </p>
         </div>
@@ -32,7 +32,7 @@ export default function BranchesSection({ profile }) {
           {branches.map((b) => (
             <div 
               key={b.id} 
-              className="p-6 sm:p-8 rounded-3xl bg-white border border-stone-200/90 shadow-[0_6px_28px_rgba(0,0,0,0.06)] hover:shadow-[0_24px_50px_-10px_rgba(82,1,34,0.18)] hover:-translate-y-1.5 hover:border-[#520122]/40 transition-all duration-300 ease-out flex flex-col md:flex-row items-start md:items-center justify-between gap-6 group"
+              className="p-5 sm:p-8 rounded-3xl bg-white border border-stone-200/90 shadow-[0_6px_28px_rgba(0,0,0,0.06)] hover:shadow-[0_24px_50px_-10px_rgba(82,1,34,0.18)] hover:-translate-y-1.5 hover:border-[#520122]/40 transition-all duration-300 ease-out flex flex-col md:flex-row items-start md:items-center justify-between gap-6 group"
             >
               <div className="space-y-3">
                 <div className="flex items-center gap-2">

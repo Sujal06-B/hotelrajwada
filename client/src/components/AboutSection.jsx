@@ -3,23 +3,23 @@ import { CheckCircle2, FileText, BookOpen, Utensils, ShieldCheck, Building2 } fr
 
 export default function AboutSection({ profile }) {
   return (
-    <section id="about" className="py-20 bg-[#f9f6f0] border-y border-[#ede7de] relative overflow-hidden">
+    <section id="about" className="py-12 sm:py-20 bg-[#f9f6f0] border-y border-[#ede7de] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           
           {/* Photo Montage */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden border-4 border-white shadow-xl">
+            <div className="relative rounded-2xl overflow-hidden border-2 sm:border-4 border-white shadow-xl">
               <img 
                 src="./rajvada-entrance.webp" 
                 alt="Yes Rajvada Front Entrance" 
-                className="w-full h-[380px] sm:h-[450px] object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-[260px] sm:h-[450px] object-cover hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent"></div>
               
-              <div className="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-stone-200 shadow-md">
-                <p className="text-xs uppercase tracking-widest text-[#e05318] font-bold">GADHINGLAJ, KOLHAPUR</p>
-                <p className="text-sm font-bold text-[#520122]">हॉस्पिटॅलिटी आणि अस्सल कोल्हापुरी चवीचे मानाचे स्थान</p>
+              <div className="absolute bottom-3 left-3 right-3 sm:bottom-5 sm:left-5 sm:right-5 p-3 sm:p-4 rounded-xl bg-white/95 backdrop-blur-md border border-stone-200 shadow-md">
+                <p className="text-[10px] sm:text-xs uppercase tracking-widest text-[#e05318] font-bold">GADHINGLAJ, KOLHAPUR</p>
+                <p className="text-xs sm:text-sm font-bold text-[#520122]">हॉस्पिटॅलिटी आणि अस्सल कोल्हापुरी चवीचे मानाचे स्थान</p>
               </div>
             </div>
 
@@ -37,12 +37,12 @@ export default function AboutSection({ profile }) {
 
           {/* Text Content */}
           <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold tracking-wider mb-4 shadow-xs">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold tracking-wider mb-3 sm:mb-4 shadow-xs">
               <BookOpen className="w-3.5 h-3.5 text-[#e05318]" />
               <span>आमचा वारसा • HERITAGE &amp; TASTE</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-royal text-[#520122] mb-6 leading-tight">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold font-royal text-[#520122] mb-4 sm:mb-6 leading-tight">
               गावाकडची चव, <br />
               <em className="saffron-text-gradient not-italic">मनापासून आणि आपुलकीने!</em>
             </h2>

@@ -85,19 +85,19 @@ export default function ReviewsSection({ profile, onSelectPhoto }) {
   const marqueeItems = [...googleReviewsData, ...googleReviewsData];
 
   return (
-    <section id="reviews" className="py-20 bg-[#fdfbf7] border-t border-[#ede7de] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-12">
+    <section id="reviews" className="py-12 sm:py-20 bg-[#fdfbf7] border-t border-[#ede7de] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-8 sm:mb-12">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold uppercase tracking-wider mb-3 shadow-xs">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold uppercase tracking-wider mb-2.5 sm:mb-3 shadow-xs">
             <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-500" />
             4.9★ GOOGLE MAPS REVIEWS
           </div>
-          <h2 className="text-3xl sm:text-5xl font-bold font-royal text-[#520122] mb-3">
+          <h2 className="text-2xl sm:text-5xl font-bold font-royal text-[#520122] mb-2 sm:mb-3">
             आमच्या ग्राहकांचे <em className="saffron-text-gradient not-italic">खरे अनुभव व फोटो</em>
           </h2>
-          <p className="text-sm sm:text-base text-[#64748b]">
+          <p className="text-xs sm:text-base text-[#64748b]">
             ग्राहक स्वतः Google वर अपलोड केलेले अस्सल फोटो व ५-स्टार अभिप्राय. 
             <span className="hidden sm:inline text-xs text-[#520122] font-semibold ml-1">
               (कार्डवर कर्सर ठेवताच स्क्रोलिंग थांबेल)
@@ -108,17 +108,17 @@ export default function ReviewsSection({ profile, onSelectPhoto }) {
       </div>
 
       {/* Moving Marquee Container (Left to Right, Pauses on Hover) */}
-      <div className="marquee-container relative w-full overflow-hidden py-4">
+      <div className="marquee-container relative w-full overflow-hidden py-3 sm:py-4">
         {/* Edge gradient fades for seamless look */}
-        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-28 bg-gradient-to-r from-[#fdfbf7] to-transparent z-10"></div>
-        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-28 bg-gradient-to-l from-[#fdfbf7] to-transparent z-10"></div>
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-8 sm:w-28 bg-gradient-to-r from-[#fdfbf7] to-transparent z-10"></div>
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 sm:w-28 bg-gradient-to-l from-[#fdfbf7] to-transparent z-10"></div>
 
         {/* Marquee Track Moving Left to Right */}
-        <div className="marquee-track-ltr flex gap-6 px-4">
+        <div className="marquee-track-ltr flex gap-4 sm:gap-6 px-4">
           {marqueeItems.map((rev, idx) => (
             <div
               key={`${rev.id}-${idx}`}
-              className="w-[310px] sm:w-[350px] shrink-0 bg-white rounded-2xl border border-stone-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_24px_50px_-8px_rgba(82,1,34,0.22)] hover:-translate-y-2 hover:border-[#520122]/40 transition-all duration-300 ease-out p-5 flex flex-col justify-between group cursor-pointer"
+              className="w-[275px] sm:w-[350px] shrink-0 bg-white rounded-2xl border border-stone-200/90 shadow-[0_4px_16px_rgba(0,0,0,0.05)] hover:shadow-[0_24px_50px_-8px_rgba(82,1,34,0.22)] hover:-translate-y-2 hover:border-[#520122]/40 transition-all duration-300 ease-out p-4 sm:p-5 flex flex-col justify-between group cursor-pointer"
               onClick={() => onSelectPhoto && onSelectPhoto({ url: rev.image, title: rev.title, category: 'Google Review' })}
             >
               <div>

@@ -30,38 +30,41 @@ export default function Navbar({ profile }) {
 
   return (
     <>
-      {/* Top Banner (Light & Elegant) */}
-      <div className="bg-[#f9f5ef] border-b border-[#e8e0d5] py-2 px-4 text-xs font-medium text-[#4a5568]">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-          <div className="flex items-center gap-2">
+      {/* Top Banner (Streamlined & Clean on Mobile) */}
+      <div className="bg-[#f9f5ef] border-b border-[#e8e0d5] py-1.5 sm:py-2 px-3 sm:px-4 text-xs font-medium text-[#4a5568]">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
+          {/* Tagline visible on tablet/desktop */}
+          <div className="hidden sm:flex items-center gap-2">
             <span className="text-[#e05318] font-bold">✦</span>
             <span className="font-medium text-[#2d3748]">अस्सल चव • आपुलकीची सेवा • गडहिंग्लज (Gadhinglaj)</span>
           </div>
-          <div className="flex items-center gap-4">
-            <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold ${
+
+          {/* Status & Hotline */}
+          <div className="w-full sm:w-auto flex items-center justify-between sm:justify-end gap-3 sm:gap-4">
+            <span className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-semibold ${
               hotelOpen ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-red-50 text-red-700 border border-red-200'
             }`}>
               <span className={`w-1.5 h-1.5 rounded-full ${hotelOpen ? 'bg-emerald-500 animate-pulse' : 'bg-red-500'}`}></span>
               {hotelOpen ? 'उघडे आहे (11 AM - 11 PM)' : 'सध्या बंद आहे'}
             </span>
 
-            {/* Instagram Link in Topbar */}
+            {/* Instagram Link (Desktop only in topbar) */}
             <a 
               href={instagramUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="flex items-center gap-1 text-[#e1306c] font-semibold hover:opacity-80 transition-opacity"
+              className="hidden sm:flex items-center gap-1 text-[#e1306c] font-semibold hover:opacity-80 transition-opacity"
               title="Follow Yes Rajvada on Instagram"
             >
               <InstagramIcon className="w-3.5 h-3.5" fill="#e1306c" />
-              <span className="hidden sm:inline">Instagram</span>
+              <span>Instagram</span>
             </a>
 
             <a 
               href={`tel:${profile?.phone || '+919611761010'}`} 
-              className="flex items-center gap-1 text-[#520122] font-semibold hover:text-[#e05318] transition-colors"
+              className="flex items-center gap-1 text-[#520122] font-bold text-xs hover:text-[#e05318] transition-colors"
             >
-              <Phone className="w-3.5 h-3.5 text-[#e05318]" />
+              <Phone className="w-3 h-3 text-[#e05318]" />
               <span>{profile?.phone || '+91 96117 61010'}</span>
             </a>
           </div>
@@ -119,29 +122,11 @@ export default function Navbar({ profile }) {
             </a>
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button (Clean & uncluttered) */}
           <div className="flex items-center gap-2 lg:hidden">
-            <a 
-              href={instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-pink-50 text-[#e1306c] border border-pink-200"
-              title="Instagram"
-            >
-              <InstagramIcon className="w-5 h-5" fill="#e1306c" />
-            </a>
-            <a 
-              href={waUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-emerald-50 text-emerald-600 border border-emerald-200"
-              title="Chat on WhatsApp"
-            >
-              <WhatsAppIcon className="w-5 h-5 fill-emerald-600" />
-            </a>
             <button 
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-lg text-[#520122] hover:bg-stone-100 focus:outline-none"
+              className="p-2 rounded-xl text-[#520122] hover:bg-stone-100 border border-stone-200/80 focus:outline-none transition-colors"
               aria-label="Toggle Navigation"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

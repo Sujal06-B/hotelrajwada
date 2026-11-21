@@ -159,48 +159,48 @@ export default function MenuSection({ profile, onSelectPhoto }) {
     : signatureDishes.filter(d => d.category === selectedCategory);
 
   return (
-    <section id="menu" className="py-20 bg-[#fdfbf7] relative">
+    <section id="menu" className="py-12 sm:py-20 bg-[#fdfbf7] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Section Heading with Domain-Specific Utensils Icon (No generic sparkles) */}
-        <div className="text-center max-w-2xl mx-auto mb-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold tracking-wider mb-3 shadow-xs">
+        <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#e8dfd5] text-[#520122] text-xs font-bold tracking-wider mb-2.5 sm:mb-3 shadow-xs">
             <UtensilsCrossed className="w-3.5 h-3.5 text-[#e05318]" />
             <span>शाही खाद्यसंस्कृती • ROYAL DINING MENU</span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-bold font-royal text-[#520122] mb-3">
+          <h2 className="text-2xl sm:text-5xl font-bold font-royal text-[#520122] mb-2 sm:mb-3">
             आमचं <em className="saffron-text-gradient not-italic">स्वादिष्ट मेनू कार्ड</em>
           </h2>
-          <p className="text-sm sm:text-base text-[#64748b]">
+          <p className="text-xs sm:text-base text-[#64748b]">
             अस्सल कोल्हापुरी झणझणीत थाळी, शुद्ध शाकाहारी मेजवानी आणि स्वादिष्ट गोडधोड.
           </p>
         </div>
 
         {/* Professional Dual-View Presentation Switcher */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8 bg-[#f5ede3] p-2 rounded-2xl border border-[#e4d7c6] max-w-3xl mx-auto">
-          <div className="flex items-center gap-2 w-full sm:w-auto">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 mb-6 sm:mb-8 bg-[#f5ede3] p-1.5 sm:p-2 rounded-2xl border border-[#e4d7c6] max-w-3xl mx-auto">
+          <div className="flex items-center gap-1.5 sm:gap-2 w-full sm:w-auto">
             <button
               onClick={() => setViewMode('dishes')}
-              className={`flex-1 sm:flex-none px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center justify-center gap-2 ${
+              className={`flex-1 sm:flex-none px-3 sm:px-5 py-2 sm:py-2.5 rounded-xl text-[11px] sm:text-sm font-bold transition-all cursor-pointer flex items-center justify-center gap-1.5 ${
                 viewMode === 'dishes'
                   ? 'bg-[#520122] text-white shadow-md'
                   : 'text-stone-700 hover:text-[#520122] hover:bg-white/60'
               }`}
             >
-              <UtensilsCrossed className="w-4 h-4" />
+              <UtensilsCrossed className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               <span>खास डिशेस एक्सप्लोरर</span>
             </button>
 
             <button
               onClick={() => setViewMode('scans')}
-              className={`flex-1 sm:flex-none px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center justify-center gap-2 ${
+              className={`flex-1 sm:flex-none px-3 sm:px-5 py-2 sm:py-2.5 rounded-xl text-[11px] sm:text-sm font-bold transition-all cursor-pointer flex items-center justify-center gap-1.5 ${
                 viewMode === 'scans'
                   ? 'bg-[#520122] text-white shadow-md'
                   : 'text-stone-700 hover:text-[#520122] hover:bg-white/60'
               }`}
             >
-              <Layers className="w-4 h-4" />
-              <span>अधिकृत मेनू पत्रिका (Original Card)</span>
+              <Layers className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+              <span>अधिकृत मेनू पत्रिका</span>
             </button>
           </div>
 
@@ -217,13 +217,13 @@ export default function MenuSection({ profile, onSelectPhoto }) {
         {/* ================= MODE 1: SIGNATURE DISHES EXPLORER ================= */}
         {viewMode === 'dishes' && (
           <div>
-            {/* Category Filter Pills */}
-            <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+            {/* Category Filter Pills - Horizontally swipeable on mobile */}
+            <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-2 sm:pb-0 sm:flex-wrap sm:justify-center mb-6 sm:mb-10 px-1">
               {categoryTabs.map((tab) => (
                 <button
                   key={tab}
                   onClick={() => setSelectedCategory(tab)}
-                  className={`px-4 py-2 rounded-full text-xs font-bold transition-all cursor-pointer ${
+                  className={`shrink-0 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs font-bold transition-all cursor-pointer ${
                     selectedCategory === tab
                       ? 'bg-[#520122] text-white shadow-sm'
                       : 'bg-white text-stone-600 hover:text-[#520122] border border-stone-200 hover:border-stone-300'
@@ -235,7 +235,7 @@ export default function MenuSection({ profile, onSelectPhoto }) {
             </div>
 
             {/* Dishes Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {filteredDishes.map((dish) => (
                 <div
                   key={dish.id}
@@ -245,7 +245,7 @@ export default function MenuSection({ profile, onSelectPhoto }) {
                     {/* Dish Preview Banner */}
                     <div 
                       onClick={() => onSelectPhoto && onSelectPhoto({ url: dish.image, title: dish.name, category: dish.category })}
-                      className="relative h-44 overflow-hidden bg-stone-100 cursor-pointer"
+                      className="relative h-36 sm:h-44 overflow-hidden bg-stone-100 cursor-pointer"
                     >
                       <img
                         src={dish.image}

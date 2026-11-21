@@ -87,17 +87,17 @@ export default function Hero({ profile }) {
         <ChevronRight className="w-6 h-6" />
       </button>
 
-      {/* Hero Content: NO center card, NO card blurriness. Content directly over background with crisp readability */}
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center py-12">
+      {/* Hero Content: Scaled & Optimized for Mobile & Desktop */}
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center py-8 sm:py-14">
         
         {/* Eyebrow Pill */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/95 text-[#520122] text-xs sm:text-sm font-bold mb-4 shadow-xl border border-amber-300/40">
-          <span className="text-[#e05318] font-bold text-sm">✦</span>
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/95 text-[#520122] text-[11px] sm:text-sm font-bold mb-3 sm:mb-4 shadow-lg border border-amber-300/40">
+          <span className="text-[#e05318] font-bold text-xs sm:text-sm">✦</span>
           <span>{heroSlides[current].eyebrow}</span>
         </div>
 
         {/* Heading - Crisp White with Deep Text Shadows for 100% Clear Legibility */}
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold font-royal tracking-tight text-white mb-4 leading-[1.15] drop-shadow-[0_4px_18px_rgba(0,0,0,0.95)]">
+        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-royal tracking-tight text-white mb-2 sm:mb-4 leading-tight sm:leading-[1.15] drop-shadow-[0_4px_18px_rgba(0,0,0,0.95)]">
           {heroSlides[current].title} <br className="hidden sm:inline" />
           <em className="text-amber-300 not-italic drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
             {heroSlides[current].titleAccent}
@@ -105,34 +105,45 @@ export default function Hero({ profile }) {
         </h1>
 
         {/* Subtitle with Shadow */}
-        <p className="max-w-xl mx-auto text-base sm:text-xl text-white font-medium mb-8 leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
+        <p className="max-w-xl mx-auto text-xs sm:text-lg text-stone-100 font-medium mb-5 sm:mb-8 leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
           {heroSlides[current].subtitle}
         </p>
 
-        {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+        {/* Action Buttons: Side-by-side on mobile to eliminate vertical clutter */}
+        <div className="flex flex-row items-center justify-center gap-2.5 sm:gap-4 mb-5 sm:mb-8 w-full max-w-sm mx-auto">
           <a
             href="#menu"
-            className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#520122] to-[#730634] text-white font-bold text-xs sm:text-sm tracking-wide shadow-2xl border border-amber-300/40 hover:brightness-110 hover:scale-105 transition-all flex items-center justify-center gap-2 group"
+            className="flex-1 px-3.5 sm:px-8 py-2.5 sm:py-3.5 rounded-xl bg-gradient-to-r from-[#520122] to-[#730634] text-white font-bold text-xs sm:text-sm tracking-wide shadow-xl border border-amber-300/40 hover:brightness-110 hover:scale-105 transition-all flex items-center justify-center gap-1.5 group"
           >
-            <UtensilsCrossed className="w-4 h-4 text-white" />
-            <span>आमचं मेनू पहा</span>
-            <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <UtensilsCrossed className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
+            <span>मेनू पहा</span>
+            <ChevronRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
           </a>
 
           <a
             href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm tracking-wide shadow-2xl hover:scale-105 transition-all flex items-center justify-center gap-2.5 border border-emerald-400/50"
+            className="flex-1 px-3.5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm tracking-wide shadow-xl hover:scale-105 transition-all flex items-center justify-center gap-1.5 border border-emerald-400/50"
           >
-            <WhatsAppIcon className="w-4 h-4 fill-white" />
-            <span>WhatsApp वर चौकशी करा</span>
+            <WhatsAppIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-white" />
+            <span>WhatsApp</span>
           </a>
         </div>
 
-        {/* Royal Heritage Proof Ribbon (Clean, Human-Crafted Hospitality Hierarchy) */}
-        <div className="pt-6 border-t border-white/20 grid grid-cols-2 md:grid-cols-4 gap-3 text-left">
+        {/* Mobile: Ultra-sleek single-line glass proof pill */}
+        <div className="sm:hidden inline-flex items-center justify-center gap-2.5 py-1.5 px-3.5 rounded-full bg-black/55 backdrop-blur-md border border-amber-300/30 text-[11px] text-stone-200 shadow-lg">
+          <span className="flex items-center gap-1 text-amber-300 font-bold">
+            <span>★</span> 4.9 (Google)
+          </span>
+          <span className="text-white/30">•</span>
+          <span>कौटुंबिक AC बैठक</span>
+          <span className="text-white/30">•</span>
+          <span>२५०+ हॉल क्षमता</span>
+        </div>
+
+        {/* Desktop & Tablet: Full 4-Card Grid */}
+        <div className="hidden sm:grid sm:grid-cols-4 gap-3 text-left pt-6 border-t border-white/20">
           <div className="flex items-center gap-2.5 p-3 rounded-2xl bg-black/45 backdrop-blur-md border border-amber-300/30 text-white shadow-xl hover:border-amber-400/60 transition-all">
             <span className="text-amber-400 font-bold text-lg">★</span>
             <div>
@@ -167,13 +178,13 @@ export default function Hero({ profile }) {
         </div>
 
         {/* Carousel Indicator Dots */}
-        <div className="mt-8 flex justify-center gap-2">
+        <div className="mt-5 sm:mt-8 flex justify-center gap-1.5 sm:gap-2">
           {heroSlides.map((_, idx) => (
             <button
               key={idx}
               onClick={() => setCurrent(idx)}
-              className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                idx === current ? 'w-8 bg-white' : 'w-2 bg-white/50 hover:bg-white/80'
+              className={`h-1.5 sm:h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                idx === current ? 'w-6 sm:w-8 bg-white' : 'w-1.5 sm:w-2 bg-white/50 hover:bg-white/80'
               }`}
               aria-label={`Slide ${idx + 1}`}
             />
