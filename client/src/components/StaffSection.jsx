@@ -3,7 +3,7 @@ import { Users2, ShieldCheck, Award } from 'lucide-react';
 
 const staffMembers = [
   {
-    name: 'श्री. तानाजीराव पाटील',
+    name: 'श्री. लक्ष्मीकांत पाटील',
     role: 'Founder & Managing Director',
     marathiRole: 'संस्थापक व व्यवस्थापकीय संचालक',
     exp: '२५+ वर्षे अनुभव',
