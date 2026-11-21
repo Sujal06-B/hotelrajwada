@@ -4,14 +4,14 @@ import { Camera, Maximize2 } from 'lucide-react';
 const galleryTabs = ['All', 'Hotel', 'Hall', 'Special Thali'];
 
 const fallbackPhotos = [
-  { id: "p-1", title: "Hotel Grand Entrance", category: "Hotel", url: "/rajvada-entrance.webp" },
-  { id: "p-2", title: "Royal Celebration Hall", category: "Hall", url: "/hero2.webp" },
-  { id: "p-3", title: "Family Dining Hall", category: "Hotel", url: "/hero3.jpg" },
-  { id: "p-4", title: "Evening Heritage Glow", category: "Hotel", url: "/hero4.jpg" },
-  { id: "p-5", title: "Kolhapuri Special Thali", category: "Special Thali", url: "/Menu/menu-2.jpeg" },
-  { id: "p-6", title: "Ambience & Seating", category: "Hotel", url: "/rajwadaHotelImages/hotel-1.jpeg" },
-  { id: "p-7", title: "Royal Event Stage", category: "Hall", url: "/rajwadaHotelImages/hotel-3.jpeg" },
-  { id: "p-8", title: "Buffet & Dining Area", category: "Hall", url: "/rajwadaHotelImages/hotel-5.jpeg" }
+  { id: "p-1", title: "Hotel Grand Entrance", category: "Hotel", url: "./rajvada-entrance.webp" },
+  { id: "p-2", title: "Royal Celebration Hall", category: "Hall", url: "./hero2.webp" },
+  { id: "p-3", title: "Family Dining Hall", category: "Hotel", url: "./hero3.jpg" },
+  { id: "p-4", title: "Evening Heritage Glow", category: "Hotel", url: "./hero4.jpg" },
+  { id: "p-5", title: "Kolhapuri Special Thali", category: "Special Thali", url: "./Menu/menu-2.jpeg" },
+  { id: "p-6", title: "Ambience & Seating", category: "Hotel", url: "./rajwadaHotelImages/hotel-1.jpeg" },
+  { id: "p-7", title: "Royal Event Stage", category: "Hall", url: "./rajwadaHotelImages/hotel-3.jpeg" },
+  { id: "p-8", title: "Buffet & Dining Area", category: "Hall", url: "./rajwadaHotelImages/hotel-5.jpeg" }
 ];
 
 export default function GallerySection({ photos, onSelectPhoto }) {
@@ -72,7 +72,7 @@ export default function GallerySection({ photos, onSelectPhoto }) {
                 className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
                 loading="lazy"
                 onError={(e) => {
-                  e.currentTarget.src = '/rajvada-entrance.webp';
+                  e.currentTarget.src = './rajvada-entrance.webp';
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3.5">

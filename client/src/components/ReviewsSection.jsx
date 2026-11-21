@@ -11,7 +11,7 @@ const googleReviewsData = [
     rating: 5,
     title: 'अस्सल कोल्हापुरी चव आणि मटण थाळी!',
     comment: 'कुटुंबासोबत आलो होतो. मटण थाळी, तांबडा-पांढरा रस्सा आणि बाजरीची भाकरी अप्रतिम होती. गडहिंग्लजमधील सर्वोत्तम हॉटेल!',
-    image: '/Reviews/review-1.jpeg',
+    image: './Reviews/review-1.jpeg',
     dish: 'स्पेशल पनीर व स्टार्टर्स',
     avatarColor: 'from-[#520122] to-[#730634]'
   },
@@ -23,7 +23,7 @@ const googleReviewsData = [
     rating: 5,
     title: 'लग्न व साखरपुडा हॉलचा उत्कृष्ट अनुभव',
     comment: 'आमच्या भावाचा साखरपुडा Yes Rajvada हॉलमध्ये झाला. सजावट, जेवण आणि स्टाफची आपुलकीची सेवा — सर्वच उत्तम होतं!',
-    image: '/Reviews/review-2.jpeg',
+    image: './Reviews/review-2.jpeg',
     dish: 'सूप व वेलकम स्टार्टर्स',
     avatarColor: 'from-[#8b181b] to-[#5c0f11]'
   },
@@ -35,7 +35,7 @@ const googleReviewsData = [
     rating: 5,
     title: 'कोफ्ता करी आणि व्हेज स्पेशल थाळी',
     comment: 'शुद्ध शाकाहारी जेवणासाठी गडहिंग्लजमधील सर्वात सुरक्षित आणि कौटुंबिक जागा. कोफ्ता करी आणि मऊ गरम चपाती लाजवाब होती.',
-    image: '/Reviews/review-3.jpeg',
+    image: './Reviews/review-3.jpeg',
     dish: 'शाही कोफ्ता करी स्पेशल',
     avatarColor: 'from-[#e05318] to-[#c2410c]'
   },
@@ -47,7 +47,7 @@ const googleReviewsData = [
     rating: 5,
     title: 'गावरान चिकन थाळी व सोलकढी',
     comment: 'रस्स्याची चव थेट जिभेवर रेंगाळते. स्वच्छता, प्रशस्त पार्किंग आणि त्वरित सर्व्हिस यासाठी ५ पैकी ५ स्टार.',
-    image: '/Reviews/review-4.jpeg',
+    image: './Reviews/review-4.jpeg',
     dish: 'स्पेशल नॉन-व्हेज ताट',
     avatarColor: 'from-[#520122] to-[#3a0017]'
   },
@@ -59,7 +59,7 @@ const googleReviewsData = [
     rating: 5,
     title: 'कौटुंबिक स्नेहसंमेलन व स्वादिष्ट भोजन',
     comment: 'हायवेवरून येताना येथे जेवलो. वातावरण खूप रम्य आहे आणि स्टाफचा स्वभाव अत्यंत नम्र व आदरातिथ्यपूर्ण आहे.',
-    image: '/Reviews/review-5.jpeg',
+    image: './Reviews/review-5.jpeg',
     dish: 'पारंपरिक भोजन बैठक',
     avatarColor: 'from-[#730634] to-[#520122]'
   },
@@ -71,7 +71,7 @@ const googleReviewsData = [
     rating: 5,
     title: 'शाही राजवाडा फील आणि खमंग पदार्थ',
     comment: 'नावाप्रमाणेच राजेशाही फील येतो. जेवणाचा दर्जा नेहमीप्रमाणे उत्कृष्ट आहे. नक्की भेट द्या!',
-    image: '/Reviews/review-6.jpeg',
+    image: './Reviews/review-6.jpeg',
     dish: 'हॉटेल डायनिंग नजराणा',
     avatarColor: 'from-[#e05318] to-[#9a3412]'
   }
@@ -164,7 +164,7 @@ export default function ReviewsSection({ profile, onSelectPhoto }) {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                     onError={(e) => {
-                      e.currentTarget.src = '/rajvada-entrance.webp';
+                      e.currentTarget.src = './rajvada-entrance.webp';
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-between p-2.5">

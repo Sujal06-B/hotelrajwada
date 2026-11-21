@@ -79,7 +79,7 @@ export default function Navbar({ profile }) {
           {/* Brand Logo & Name */}
           <a href="#home" className="flex items-center gap-3 group">
             <img 
-              src="/logo.jpg" 
+              src="./logo.jpg" 
               alt="Yes Rajvada Logo" 
               className="w-11 h-11 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-[#520122] shadow-sm group-hover:scale-105 transition-transform" 
             />

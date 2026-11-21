@@ -8,7 +8,7 @@ const staffMembers = [
     marathiRole: 'संस्थापक व व्यवस्थापकीय संचालक',
     exp: '२५+ वर्षे अनुभव',
     bio: 'महाराष्ट्रीयन खाद्यसंस्कृती आणि आपुलकीच्या पाहुणचाराची २५ वर्षांची गौरवशाली परंपरा जपणारे मार्गदर्शक.',
-    photo: '/staff/staff-1.jpg',
+    photo: './staff/staff-1.jpg',
     badge: 'Founder'
   },
   {
@@ -17,7 +17,7 @@ const staffMembers = [
     marathiRole: 'मुख्य आचारी (मास्टर शेफ)',
     exp: '१८+ वर्षे अनुभव',
     bio: 'अस्सल कोल्हापुरी तांबडा-पांढरा रस्सा, गावरान मटण व शाही थाळीचे कुशल पाककला तज्ज्ञ.',
-    photo: '/staff/staff-2.jpg',
+    photo: './staff/staff-2.jpg',
     badge: 'Master Chef'
   },
   {
@@ -26,7 +26,7 @@ const staffMembers = [
     marathiRole: 'हॉटेल व्यवस्थापक',
     exp: '१२+ वर्षे अनुभव',
     bio: 'डायनिंग हॉलची स्वच्छता, तत्पर सेवा आणि प्रत्येक पाहुण्याचे उत्तम आदरातिथ्य सुनिश्चित करणारे.',
-    photo: '/staff/staff-3.jpg',
+    photo: './staff/staff-3.jpg',
     badge: 'Hospitality Lead'
   },
   {
@@ -35,7 +35,7 @@ const staffMembers = [
     marathiRole: 'मंगल कार्यालय व इव्हेंट प्रमुख',
     exp: '१०+ वर्षे अनुभव',
     bio: 'लग्नसमारंभ, साखरपुडा व कौटुंबिक उत्सवांचे परिपूर्ण नियोजन आणि शाही व्यवस्थापन सांभाळणाऱ्या.',
-    photo: '/staff/staff-4.jpg',
+    photo: './staff/staff-4.jpg',
     badge: 'Events Specialist'
   }
 ];
@@ -75,7 +75,7 @@ export default function StaffSection() {
                     className="w-full h-full object-cover object-top group-hover:scale-108 transition-transform duration-700 ease-out"
                     loading="lazy"
                     onError={(e) => {
-                      e.currentTarget.src = '/rajvada-entrance.webp';
+                      e.currentTarget.src = './rajvada-entrance.webp';
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent group-hover:from-black/75 transition-colors duration-300"></div>

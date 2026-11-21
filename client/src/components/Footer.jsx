@@ -14,7 +14,7 @@ export default function Footer({ profile }) {
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <div className="flex items-center gap-3 mb-2">
               <img 
-                src="/logo.jpg" 
+                src="./logo.jpg" 
                 alt="Yes Rajvada Logo" 
                 className="w-11 h-11 rounded-full object-cover border-2 border-[#520122]"
               />

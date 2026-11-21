@@ -4,28 +4,28 @@ import WhatsAppIcon from './WhatsAppIcon.jsx';
 
 const heroSlides = [
   {
-    image: '/rajvada-entrance.webp',
+    image: './rajvada-entrance.webp',
     eyebrow: 'अस्सल कोल्हापुरी व महाराष्ट्रीयन मेजवानी',
     title: 'राजेशाही चव,',
     titleAccent: 'आपुलकीची सेवा.',
     subtitle: 'गडहिंग्लजमधील अग्रगण्य कौटुंबिक रेस्टॉरंट आणि भव्य मंगल कार्यालय.',
   },
   {
-    image: '/hero2.webp',
+    image: './hero2.webp',
     eyebrow: 'भव्य व वातानुकूलित मंगल कार्यालय',
     title: 'तुमचा खास सोहळा,',
     titleAccent: 'आमची खास जागा.',
     subtitle: 'लग्न, साखरपुडा, वाढदिवस व कौटुंबिक समारंभांसाठी सर्वोत्तम हॉल.',
   },
   {
-    image: '/hero3.jpg',
+    image: './hero3.jpg',
     eyebrow: 'शुद्ध शाकाहारी व खमंग मांसाहारी',
     title: 'खमंग चवींचा,',
     titleAccent: 'शाही नजराणा.',
     subtitle: 'अस्सल तांबडा-पांढरा रस्सा, मटण थाळी व स्पेशल व्हेज थाळी.',
   },
   {
-    image: '/hero4.jpg',
+    image: './hero4.jpg',
     eyebrow: 'उत्तम बैठक व्यवस्था व रम्य वातावरण',
     title: 'कुटुंबासोबत,',
     titleAccent: 'आनंदाचे क्षण.',

@@ -49,14 +49,14 @@ export default function AdminDashboard() {
     description: '',
     dietary: 'veg',
     isAvailable: true,
-    image: '/Menu/WhatsApp Image 2026-11-20 at 19.55.57.jpeg'
+    image: './Menu/WhatsApp Image 2026-11-20 at 19.55.57.jpeg'
   });
 
   const [showAddPhotoModal, setShowAddPhotoModal] = useState(false);
   const [newPhoto, setNewPhoto] = useState({
     title: '',
     category: 'Hotel',
-    url: '/rajvada-entrance.webp'
+    url: './rajvada-entrance.webp'
   });
 
   const [enquiryFilter, setEnquiryFilter] = useState('all');
@@ -110,7 +110,7 @@ export default function AdminDashboard() {
       description: '',
       dietary: 'veg',
       isAvailable: true,
-      image: '/Menu/WhatsApp Image 2026-11-20 at 19.55.57.jpeg'
+      image: './Menu/WhatsApp Image 2026-11-20 at 19.55.57.jpeg'
     });
     showToast('डिश यशस्वीरित्या जोडली!');
   };
@@ -210,7 +210,7 @@ export default function AdminDashboard() {
           {/* Brand */}
           <div className="p-5 border-b border-[#d4a853]/20 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <img src="/logo.jpg" alt="Logo" className="w-9 h-9 rounded-full object-cover border border-[#d4a853]" />
+              <img src="./logo.jpg" alt="Logo" className="w-9 h-9 rounded-full object-cover border border-[#d4a853]" />
               <div>
                 <p className="font-royal font-bold text-base tracking-wide text-[#fbf6ea]">YES RAJVADA</p>
                 <p className="text-[10px] text-[#d4a853] font-semibold tracking-wider">ADMIN CONTROL</p>

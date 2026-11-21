@@ -15,7 +15,7 @@ export default function HallSection({ profile }) {
           <div className="order-2 lg:order-1 relative group">
             <div className="rounded-2xl overflow-hidden border-4 border-white shadow-[0_12px_36px_rgba(0,0,0,0.12)] group-hover:shadow-[0_24px_50px_-8px_rgba(82,1,34,0.22)] transition-all duration-500">
               <img 
-                src="/hero2.webp" 
+                src="./hero2.webp" 
                 alt="Yes Rajvada Celebration Hall" 
                 className="w-full h-[360px] sm:h-[420px] object-cover group-hover:scale-106 transition-transform duration-700 ease-out"
               />
@@ -89,7 +89,7 @@ export default function HallSection({ profile }) {
               </a>
 
               <a 
-                href="/RajwadaQuatation.pdf" 
+                href="./RajwadaQuatation.pdf" 
                 download
                 className="px-5 py-3.5 rounded-xl bg-white border border-[#d5cbbe] text-[#520122] hover:border-[#520122] font-semibold text-sm flex items-center gap-2 hover:bg-stone-50 transition-all shadow-xs"
               >

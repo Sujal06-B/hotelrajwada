@@ -11,7 +11,7 @@ export default function AboutSection({ profile }) {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden border-4 border-white shadow-xl">
               <img 
-                src="/rajvada-entrance.webp" 
+                src="./rajvada-entrance.webp" 
                 alt="Yes Rajvada Front Entrance" 
                 className="w-full h-[380px] sm:h-[450px] object-cover hover:scale-105 transition-transform duration-700"
               />
@@ -92,7 +92,7 @@ export default function AboutSection({ profile }) {
               </a>
 
               <a 
-                href="/RajwadaQuatation.pdf" 
+                href="./RajwadaQuatation.pdf" 
                 download
                 className="px-5 py-3 rounded-xl bg-white border border-[#d5cbbe] text-[#520122] hover:border-[#520122] font-semibold text-sm flex items-center gap-2 hover:bg-stone-50 transition-all shadow-xs"
               >

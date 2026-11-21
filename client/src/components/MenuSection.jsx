@@ -7,28 +7,28 @@ const originalMenuPages = [
     id: 'mp-1',
     title: 'मेनू पान १: स्पेशल व्हेज व महाराष्ट्रीयन स्टार्टर्स',
     subtitle: 'Veg Starters, Soups & Maharashtrian Specialties',
-    image: '/Menu/menu-1.jpeg',
+    image: './Menu/menu-1.jpeg',
     tag: 'Veg Special',
   },
   {
     id: 'mp-2',
     title: 'मेनू पान २: स्पेशल कोल्हापुरी थाळी व मटण/चिकन',
     subtitle: 'Kolhapuri Mutton & Chicken Thali Specials',
-    image: '/Menu/menu-2.jpeg',
+    image: './Menu/menu-2.jpeg',
     tag: 'Kolhapuri Thali',
   },
   {
     id: 'mp-3',
     title: 'मेनू पान ३: सुक्का मटण, बिर्याणी व रोटी प्रकार',
     subtitle: 'Sukka Mutton, Dum Biryani & Tandoor Breads',
-    image: '/Menu/menu-3.jpeg',
+    image: './Menu/menu-3.jpeg',
     tag: 'Biryani & Breads',
   },
   {
     id: 'mp-4',
     title: 'मेनू पान ४: थंडगार पेये, सोलकढी, ताक व मिष्टान्न',
     subtitle: 'Refreshing Beverages, Solkadhi & Traditional Desserts',
-    image: '/Menu/menu-4.jpeg',
+    image: './Menu/menu-4.jpeg',
     tag: 'Beverages & Desserts',
   }
 ];
@@ -44,7 +44,7 @@ const signatureDishes = [
     numericPrice: 360,
     badge: 'सर्वाधिक पसंती (Bestseller)',
     description: 'अस्सल झणझणीत तांबडा व पांढरा अमर्याद रस्सा, कोल्हापुरी गावरान सुक्कं मटण, २ बाजरीची भाकरी/चपाती आणि वाफाळलेला इंद्रायणी भात.',
-    image: '/Menu/menu-2.jpeg'
+    image: './Menu/menu-2.jpeg'
   },
   {
     id: 'sd-2',
@@ -56,7 +56,7 @@ const signatureDishes = [
     numericPrice: 290,
     badge: 'शेफ स्पेशल',
     description: 'गावरान चिकन सुक्का फ्राय, चवदार तांबडा-पांढरा रस्सा, गरमागरम चपाती किंवा बाजरीची भाकरी, कांदा-लिंबू व बासमती भात.',
-    image: '/Menu/menu-3.jpeg'
+    image: './Menu/menu-3.jpeg'
   },
   {
     id: 'sd-3',
@@ -68,7 +68,7 @@ const signatureDishes = [
     numericPrice: 220,
     badge: 'शुद्ध शाकाहारी',
     description: 'दोन ताज्या भाज्या (पनीर बटर मसाला व सुक्की भाजी), डाळ तडका, जिरा राईस, २ चपाती किंवा भाकरी, गोड शिरा/गुलाबजाम, पापड व ताक.',
-    image: '/Menu/menu-1.jpeg'
+    image: './Menu/menu-1.jpeg'
   },
   {
     id: 'sd-4',
@@ -80,7 +80,7 @@ const signatureDishes = [
     numericPrice: 210,
     badge: 'लोकप्रिय व्हेज',
     description: 'ताजे मऊ पनीर, रिच काजू आणि लोणी ग्रेव्ही, वरून कसुरी मेथीची सुगंधी फोडणी. बटर रोटीसोबत सर्वोत्तम जोडी.',
-    image: '/Menu/menu-4.jpeg'
+    image: './Menu/menu-4.jpeg'
   },
   {
     id: 'sd-5',
@@ -92,7 +92,7 @@ const signatureDishes = [
     numericPrice: 230,
     badge: 'शाही चव',
     description: 'तळलेले अखंड काजू, कोल्हापुरी खमंग लाल ग्रेव्ही, साजूक तुपाची फोडणी आणि राजेशाही स्वाद.',
-    image: '/Menu/menu-1.jpeg'
+    image: './Menu/menu-1.jpeg'
   },
   {
     id: 'sd-6',
@@ -104,7 +104,7 @@ const signatureDishes = [
     numericPrice: 320,
     badge: 'दम बिर्याणी',
     description: 'सुगंधी लांब दाण्याचा बासमती तांदूळ, मसालेदार कोल्हापुरी मटण तुकडे, दम पद्धतीने शिजवलेली बिर्याणी सोबत थंडगार बुंदी रायता.',
-    image: '/Menu/menu-3.jpeg'
+    image: './Menu/menu-3.jpeg'
   },
   {
     id: 'sd-7',
@@ -116,7 +116,7 @@ const signatureDishes = [
     numericPrice: 40,
     badge: 'पाचक व थंडगार',
     description: 'ताजे काढलेले नारळाचे दूध, अस्सल आगळ (कोकम), लसूण व हिरवी मिरचीची खमंग फोडणी. जेवणानंतर पचनासाठी सर्वोत्तम.',
-    image: '/Menu/menu-4.jpeg'
+    image: './Menu/menu-4.jpeg'
   },
   {
     id: 'sd-8',
@@ -128,7 +128,7 @@ const signatureDishes = [
     numericPrice: 30,
     badge: 'पारंपरिक',
     description: 'दह्यापासून ताजे घुसळलेले थंडगार ताक, भाजलेले जिरेपूड, बारीक चिरलेली कोथिंबीर आणि काळं मीठ.',
-    image: '/Menu/menu-1.jpeg'
+    image: './Menu/menu-1.jpeg'
   }
 ];
 
@@ -205,7 +205,7 @@ export default function MenuSection({ profile, onSelectPhoto }) {
           </div>
 
           <a
-            href="/RajwadaQuatation.pdf"
+            href="./RajwadaQuatation.pdf"
             download
             className="w-full sm:w-auto px-4 py-2 rounded-xl bg-white hover:bg-stone-50 border border-stone-200 text-[#520122] font-semibold text-xs flex items-center justify-center gap-2 shadow-2xs transition-all hover:scale-102"
           >
@@ -253,7 +253,7 @@ export default function MenuSection({ profile, onSelectPhoto }) {
                         className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
                         loading="lazy"
                         onError={(e) => {
-                          e.currentTarget.src = '/rajvada-entrance.webp';
+                          e.currentTarget.src = './rajvada-entrance.webp';
                         }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
