@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>आमचं मेनू | Yes Rajvada Hotel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="preloader" class="preloader"><div class="pre-logo"><img src="logo.jpg" alt="Yes Rajvada"><span>YES RAJVADA</span><div class="pre-bar"><div class="pre-fill"></div></div></div></div>
+  <div class="topline"><span>✦ अस्सल चव • आपुलकीची सेवा • Gadhinglaj</span><span><span id="hotelStatusBadge" class="status-badge"></span>Call us: <a href="tel:+919611761010">+91 96117 61010</a></span></div>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="logo.jpg" alt="Yes Rajvada Logo" class="brand-logo"><span><b>YES RAJVADA</b><small>HOTEL &amp; FAMILY RESTAURANT</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="mainNav"><a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html" class="nav-active">Our Menu</a><a href="branches.html">Branches</a><a href="hall.html">Hall</a><a href="gallery.html">Gallery</a><a href="contact.html" class="nav-cta">Contact Us</a></nav>
+  </header>
+  <main>
+    <div class="page-banner" style="background:linear-gradient(135deg,#2a1206 0%,#4a1e08 100%)">
+      <p class="eyebrow">WHAT WE SERVE</p>
+      <h1>आमचं <em>खास मेनू</em></h1>
+    </div>
+    <section class="menu-section section-pad" id="menu">
+      <div class="section-heading"><div><p class="eyebrow">WHAT WE SERVE</p><h2>प्रत्येक पदार्थ <em>प्रेमाने</em></h2></div><p>ताजी, चवदार आणि मनापासून बनवलेली प्रत्येक डिश.</p></div>
+      <div class="menu-filter-tabs" id="menuFilterTabs">
+        <button class="mf-tab active" data-filter="all">🍽️ All</button>
+        <button class="mf-tab" data-filter="veg">🟢 Veg</button>
+        <button class="mf-tab" data-filter="nonveg">🔴 Non-Veg</button>
+        <button class="mf-tab" data-filter="thali">🍱 Thali</button>
+      </div>
+      <div class="food-grid" id="foodGrid">
+        <article class="food-card reveal" data-food-cat="veg">
+          <div class="food-img-wrap"><div class="photo-placeholder" id="vegPlaceholder"><span>🥗</span><p>Veg Special photo</p></div></div>
+          <span class="food-badge veg-badge">🟢 Veg</span>
+          <div class="food-info"><h3>Veg Special</h3><p>ताज्या भाज्यांपासून बनवलेले अस्सल महाराष्ट्रीयन पदार्थ.</p><a class="btn btn-sm btn-outline" href="contact.html">Order via WhatsApp ↗</a></div>
+        </article>
+        <article class="food-card reveal" data-food-cat="nonveg">
+          <div class="food-img-wrap"><div class="photo-placeholder" id="nonvegPlaceholder"><span>🍗</span><p>Non-Veg Special photo</p></div></div>
+          <span class="food-badge nonveg-badge">🔴 Non-Veg</span>
+          <div class="food-info"><h3>Non-Veg Special</h3><p>मसालेदार, रसदार Non-Veg पदार्थ — आमची खासियत.</p><a class="btn btn-sm btn-outline" href="contact.html">Order via WhatsApp ↗</a></div>
+        </article>
+        <article class="food-card reveal" data-food-cat="thali">
+          <div class="food-img-wrap"><div class="photo-placeholder" id="thaliPlaceholder"><span>🍱</span><p>Special Thali photo</p></div></div>
+          <span class="food-badge thali-badge">🍱 Thali</span>
+          <div class="food-info"><h3>Special Thali</h3><p>भरपूर चवींची थाळी — पूर्ण जेवणाचा आनंद एका ताटात.</p><a class="btn btn-sm btn-outline" href="contact.html">Order via WhatsApp ↗</a></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="index.html"><img src="logo.jpg" alt="Yes Rajvada Logo" class="brand-logo"><span><b>YES RAJVADA</b><small>HOTEL &amp; FAMILY RESTAURANT</small></span></a><p>गावाकडची चव, मनापासून!</p><div><a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="branches.html">Branches</a><a href="hall.html">Hall</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></div><small>© <span id="year"></span> Yes Rajvada Hotel. All rights reserved.</small></footer>
+  <nav class="mobile-bottom-nav"><a href="index.html" class="mbn-item"><span>🏠</span><small>Home</small></a><a href="menu.html" class="mbn-item"><span>🍽️</span><small>Menu</small></a><a href="tel:+919611761010" class="mbn-item mbn-call"><span>📞</span><small>Call</small></a><a href="https://wa.me/919611761010" target="_blank" rel="noopener" class="mbn-item mbn-wa"><span>💬</span><small>WhatsApp</small></a><a href="gallery.html" class="mbn-item"><span>📸</span><small>Gallery</small></a></nav>
+  <a class="whatsapp-float" href="https://wa.me/919611761010" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 2C6.477 2 2 6.477 2 12c0 1.989.58 3.842 1.584 5.398L2 22l4.734-1.555A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 11.999 2zm.001 18c-1.717 0-3.317-.477-4.675-1.303l-3.275 1.075 1.1-3.19A7.962 7.962 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z"/></svg><span class="wa-tooltip">Chat with us!</span></a>
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
