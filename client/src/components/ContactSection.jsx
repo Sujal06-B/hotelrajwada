@@ -37,7 +37,7 @@ export default function ContactSection({ profile }) {
         <div className="space-y-6">
           
           {/* 1. Primary Location & Direct Hotline Banner */}
-          <div className="bg-gradient-to-br from-[#520122] via-[#63042b] to-[#3a0017] text-white rounded-3xl p-7 sm:p-10 shadow-xl border-2 border-amber-300/30 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+          <div className="bg-gradient-to-br from-[#520122] via-[#63042b] to-[#3a0017] text-white rounded-3xl p-7 sm:p-10 shadow-[0_12px_36px_rgba(82,1,34,0.25)] hover:shadow-[0_24px_55px_-10px_rgba(82,1,34,0.38)] transition-all duration-500 border-2 border-amber-300/30 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 group">
             <div className="space-y-3 max-w-xl">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-amber-300 text-xs font-bold uppercase tracking-wider border border-white/15">
                 <MapPin className="w-3.5 h-3.5 text-amber-300" />
@@ -66,7 +66,7 @@ export default function ContactSection({ profile }) {
             <div className="w-full lg:w-auto shrink-0 flex flex-col sm:flex-row lg:flex-col gap-3.5">
               <a
                 href={`tel:${phone}`}
-                className="px-6 py-3.5 rounded-xl bg-white text-[#520122] hover:bg-amber-50 font-bold text-sm tracking-wide shadow-lg flex items-center justify-center gap-2.5 transition-all hover:scale-105"
+                className="px-6 py-3.5 rounded-xl bg-white text-[#520122] hover:bg-amber-50 font-bold text-sm tracking-wide shadow-lg hover:shadow-xl flex items-center justify-center gap-2.5 transition-all hover:scale-105 active:scale-95"
               >
                 <Phone className="w-4 h-4 text-[#e05318]" />
                 <span>कॉल करा: {phone}</span>
@@ -76,7 +76,7 @@ export default function ContactSection({ profile }) {
                 href={mapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 rounded-xl bg-white/15 hover:bg-white/25 border border-white/30 text-white font-semibold text-xs tracking-wider flex items-center justify-center gap-2 transition-all"
+                className="px-6 py-3 rounded-xl bg-white/15 hover:bg-white/25 border border-white/30 text-white font-semibold text-xs tracking-wider flex items-center justify-center gap-2 transition-all hover:scale-102"
               >
                 <Navigation className="w-4 h-4 text-amber-300" />
                 <span>Google Maps वर दिशा (Directions)</span>
@@ -88,15 +88,15 @@ export default function ContactSection({ profile }) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
             {/* Left Channel: WhatsApp Concierge */}
-            <div className="bg-white rounded-3xl p-7 border border-stone-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div className="bg-white rounded-3xl p-7 border border-stone-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_24px_50px_-8px_rgba(16,185,129,0.22)] hover:-translate-y-2 hover:border-emerald-500/40 transition-all duration-300 ease-out flex flex-col justify-between group cursor-pointer">
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-600 shadow-xs">
-                      <WhatsAppIcon className="w-6 h-6 fill-emerald-600" />
+                    <div className="w-12 h-12 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-600 shadow-xs group-hover:scale-110 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
+                      <WhatsAppIcon className="w-6 h-6 fill-emerald-600 group-hover:fill-white transition-colors" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-lg text-[#1e293b]">WhatsApp हेल्पलाईन</h4>
+                      <h4 className="font-bold text-lg text-[#1e293b] group-hover:text-emerald-700 transition-colors">WhatsApp हेल्पलाईन</h4>
                       <p className="text-xs text-emerald-600 font-semibold flex items-center gap-1">
                         <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                         ऑनलाइन • त्वरित प्रतिसाद
@@ -114,30 +114,30 @@ export default function ContactSection({ profile }) {
                 href={createWaLink('नमस्कार Yes Rajvada! मला चौकशी करायची आहे.')}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs tracking-wider flex items-center justify-center gap-2 shadow-md shadow-emerald-600/20 transition-all uppercase"
+                className="w-full py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs tracking-wider flex items-center justify-center gap-2 shadow-md shadow-emerald-600/20 hover:shadow-lg hover:shadow-emerald-600/30 transition-all uppercase hover:scale-[1.02] active:scale-95"
               >
                 <WhatsAppIcon className="w-4 h-4 fill-white" />
                 <span>WhatsApp वर थेट मेसेज करा</span>
-                <ChevronRight className="w-4 h-4" />
+                <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
 
             {/* Right Channel: Official Instagram Channel */}
-            <div className="bg-white rounded-3xl p-7 border border-stone-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+            <div className="bg-white rounded-3xl p-7 border border-stone-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_24px_50px_-8px_rgba(225,48,108,0.22)] hover:-translate-y-2 hover:border-[#e1306c]/40 transition-all duration-300 ease-out flex flex-col justify-between group cursor-pointer">
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-2xl bg-pink-50 border border-pink-200 flex items-center justify-center text-[#e1306c] shadow-xs">
+                    <div className="w-12 h-12 rounded-2xl bg-pink-50 border border-pink-200 flex items-center justify-center text-[#e1306c] shadow-xs group-hover:scale-110 group-hover:bg-[#e1306c] group-hover:text-white transition-all duration-300">
                       <InstagramIcon className="w-6 h-6" fill="#e1306c" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-lg text-[#1e293b]">अधिकृत Instagram</h4>
+                      <h4 className="font-bold text-lg text-[#1e293b] group-hover:text-[#e1306c] transition-colors">अधिकृत Instagram</h4>
                       <p className="text-xs text-[#e1306c] font-semibold">
                         @hotelyesrajwada1010
                       </p>
                     </div>
                   </div>
-                  <span className="px-2.5 py-1 rounded-full text-[10px] font-bold bg-pink-50 text-[#e1306c] border border-pink-200">
+                  <span className="px-2.5 py-1 rounded-full text-[10px] font-bold bg-pink-50 text-[#e1306c] border border-pink-200 group-hover:bg-[#e1306c] group-hover:text-white transition-colors">
                     Daily Stories &amp; Reels
                   </span>
                 </div>
@@ -151,11 +151,11 @@ export default function ContactSection({ profile }) {
                 href={instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-[#f09433] via-[#e6683c] to-[#bc1888] text-white font-bold text-xs tracking-wider flex items-center justify-center gap-2 shadow-md transition-all uppercase hover:opacity-95"
+                className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-[#f09433] via-[#e6683c] to-[#bc1888] text-white font-bold text-xs tracking-wider flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all uppercase hover:opacity-95 hover:scale-[1.02] active:scale-95"
               >
                 <InstagramIcon className="w-4 h-4" fill="white" />
                 <span>Instagram पेज उघडा (@hotelyesrajwada1010)</span>
-                <ChevronRight className="w-4 h-4" />
+                <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
 

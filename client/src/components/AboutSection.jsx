@@ -47,20 +47,20 @@ export default function AboutSection({ profile }) {
             </p>
 
             <div className="space-y-3.5 mb-8">
-              <div className="flex items-start gap-3 p-3 bg-white rounded-xl border border-stone-200/80 shadow-xs">
-                <CheckCircle2 className="w-5 h-5 text-[#520122] shrink-0 mt-0.5" />
+              <div className="flex items-start gap-3 p-3.5 bg-white rounded-xl border border-stone-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_24px_-4px_rgba(82,1,34,0.14)] hover:-translate-y-1 hover:border-[#520122]/30 transition-all duration-300 cursor-pointer group">
+                <CheckCircle2 className="w-5 h-5 text-[#520122] group-hover:text-[#e05318] shrink-0 mt-0.5 transition-colors" />
                 <p className="text-sm text-[#1e293b]">
                   <b className="text-[#520122]">अस्सल कोल्हापुरी थाळी:</b> तांबडा रस्सा, पांढरा रस्सा, गरमागरम बाजरीची भाकरी आणि खमंग सुक्का मटण/चिकन.
                 </p>
               </div>
-              <div className="flex items-start gap-3 p-3 bg-white rounded-xl border border-stone-200/80 shadow-xs">
-                <CheckCircle2 className="w-5 h-5 text-[#520122] shrink-0 mt-0.5" />
+              <div className="flex items-start gap-3 p-3.5 bg-white rounded-xl border border-stone-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_24px_-4px_rgba(82,1,34,0.14)] hover:-translate-y-1 hover:border-[#520122]/30 transition-all duration-300 cursor-pointer group">
+                <CheckCircle2 className="w-5 h-5 text-[#520122] group-hover:text-[#e05318] shrink-0 mt-0.5 transition-colors" />
                 <p className="text-sm text-[#1e293b]">
                   <b className="text-[#520122]">स्वच्छ व कौटुंबिक वातावरण:</b> कुटुंबीय, मित्रमंडळी आणि लहान मुलांसाठी सुरक्षित व प्रशस्त डायनिंग व्यवस्था.
                 </p>
               </div>
-              <div className="flex items-start gap-3 p-3 bg-white rounded-xl border border-stone-200/80 shadow-xs">
-                <CheckCircle2 className="w-5 h-5 text-[#520122] shrink-0 mt-0.5" />
+              <div className="flex items-start gap-3 p-3.5 bg-white rounded-xl border border-stone-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_24px_-4px_rgba(82,1,34,0.14)] hover:-translate-y-1 hover:border-[#520122]/30 transition-all duration-300 cursor-pointer group">
+                <CheckCircle2 className="w-5 h-5 text-[#520122] group-hover:text-[#e05318] shrink-0 mt-0.5 transition-colors" />
                 <p className="text-sm text-[#1e293b]">
                   <b className="text-[#520122]">समारंभांसाठी भव्य हॉल:</b> साखरपुडा, हळद, वाढदिवस आणि इतर शुभकार्यांसाठी प्रशस्त वातानुकूलित जागा.
                 </p>

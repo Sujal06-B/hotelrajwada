@@ -12,18 +12,18 @@ export default function HallSection({ profile }) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
           {/* Hall Visuals */}
-          <div className="order-2 lg:order-1 relative">
-            <div className="rounded-2xl overflow-hidden border-4 border-white shadow-xl">
+          <div className="order-2 lg:order-1 relative group">
+            <div className="rounded-2xl overflow-hidden border-4 border-white shadow-[0_12px_36px_rgba(0,0,0,0.12)] group-hover:shadow-[0_24px_50px_-8px_rgba(82,1,34,0.22)] transition-all duration-500">
               <img 
                 src="/hero2.webp" 
                 alt="Yes Rajvada Celebration Hall" 
-                className="w-full h-[360px] sm:h-[420px] object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-[360px] sm:h-[420px] object-cover group-hover:scale-106 transition-transform duration-700 ease-out"
               />
             </div>
             
-            <div className="absolute -bottom-5 left-5 right-5 sm:left-auto sm:right-5 sm:max-w-xs p-4 rounded-xl bg-white border border-stone-200 shadow-xl">
+            <div className="absolute -bottom-5 left-5 right-5 sm:left-auto sm:right-5 sm:max-w-xs p-4 rounded-xl bg-white/95 backdrop-blur-md border border-stone-200 shadow-[0_10px_30px_rgba(0,0,0,0.12)] hover:shadow-[0_16px_36px_rgba(82,1,34,0.18)] hover:-translate-y-1 transition-all duration-300">
               <div className="flex items-center gap-3">
-                <div className="w-11 h-11 rounded-full bg-rose-50 border border-rose-200 flex items-center justify-center text-[#520122] shrink-0 font-bold text-sm">
+                <div className="w-11 h-11 rounded-full bg-rose-50 border border-rose-200 flex items-center justify-center text-[#520122] shrink-0 font-bold text-sm shadow-xs">
                   250+
                 </div>
                 <div>
@@ -51,21 +51,29 @@ export default function HallSection({ profile }) {
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-              <div className="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-stone-200/90 shadow-xs">
-                <HeartHandshake className="w-5 h-5 text-[#520122] shrink-0" />
-                <span className="text-xs sm:text-sm font-semibold text-[#1e293b]">साखरपुडा व लग्न सोहळा</span>
+              <div className="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-stone-200/90 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_24px_-4px_rgba(82,1,34,0.15)] hover:border-[#520122]/40 hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+                <div className="p-2 rounded-lg bg-rose-50 text-[#520122] group-hover:bg-[#520122] group-hover:text-white transition-colors">
+                  <HeartHandshake className="w-4 h-4 shrink-0" />
+                </div>
+                <span className="text-xs sm:text-sm font-semibold text-[#1e293b] group-hover:text-[#520122] transition-colors">साखरपुडा व लग्न सोहळा</span>
               </div>
-              <div className="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-stone-200/90 shadow-xs">
-                <Users className="w-5 h-5 text-[#520122] shrink-0" />
-                <span className="text-xs sm:text-sm font-semibold text-[#1e293b]">कौटुंबिक स्नेहसंमेलन</span>
+              <div className="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-stone-200/90 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_24px_-4px_rgba(82,1,34,0.15)] hover:border-[#520122]/40 hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+                <div className="p-2 rounded-lg bg-rose-50 text-[#520122] group-hover:bg-[#520122] group-hover:text-white transition-colors">
+                  <Users className="w-4 h-4 shrink-0" />
+                </div>
+                <span className="text-xs sm:text-sm font-semibold text-[#1e293b] group-hover:text-[#520122] transition-colors">कौटुंबिक स्नेहसंमेलन</span>
               </div>
-              <div className="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-stone-200/90 shadow-xs">
-                <Calendar className="w-5 h-5 text-[#520122] shrink-0" />
-                <span className="text-xs sm:text-sm font-semibold text-[#1e293b]">वाढदिवस व पार्टी उत्सव</span>
+              <div className="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-stone-200/90 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_24px_-4px_rgba(82,1,34,0.15)] hover:border-[#520122]/40 hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+                <div className="p-2 rounded-lg bg-rose-50 text-[#520122] group-hover:bg-[#520122] group-hover:text-white transition-colors">
+                  <Calendar className="w-4 h-4 shrink-0" />
+                </div>
+                <span className="text-xs sm:text-sm font-semibold text-[#1e293b] group-hover:text-[#520122] transition-colors">वाढदिवस व पार्टी उत्सव</span>
               </div>
-              <div className="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-stone-200/90 shadow-xs">
-                <Sparkles className="w-5 h-5 text-[#e05318] shrink-0" />
-                <span className="text-xs sm:text-sm font-semibold text-[#1e293b]">शाही केटरिंग व जेवण</span>
+              <div className="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-stone-200/90 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_24px_-4px_rgba(224,83,24,0.18)] hover:border-[#e05318]/40 hover:-translate-y-1 transition-all duration-300 cursor-pointer group">
+                <div className="p-2 rounded-lg bg-orange-50 text-[#e05318] group-hover:bg-[#e05318] group-hover:text-white transition-colors">
+                  <Sparkles className="w-4 h-4 shrink-0" />
+                </div>
+                <span className="text-xs sm:text-sm font-semibold text-[#1e293b] group-hover:text-[#e05318] transition-colors">शाही केटरिंग व जेवण</span>
               </div>
             </div>
 

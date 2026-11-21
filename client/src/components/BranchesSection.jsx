@@ -32,7 +32,7 @@ export default function BranchesSection({ profile }) {
           {branches.map((b) => (
             <div 
               key={b.id} 
-              className="p-6 sm:p-8 rounded-2xl bg-white border border-stone-200/90 shadow-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:border-[#520122]/30 transition-all"
+              className="p-6 sm:p-8 rounded-3xl bg-white border border-stone-200/90 shadow-[0_6px_28px_rgba(0,0,0,0.06)] hover:shadow-[0_24px_50px_-10px_rgba(82,1,34,0.18)] hover:-translate-y-1.5 hover:border-[#520122]/40 transition-all duration-300 ease-out flex flex-col md:flex-row items-start md:items-center justify-between gap-6 group"
             >
               <div className="space-y-3">
                 <div className="flex items-center gap-2">

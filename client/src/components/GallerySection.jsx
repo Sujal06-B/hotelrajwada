@@ -64,26 +64,26 @@ export default function GallerySection({ photos, onSelectPhoto }) {
             <div
               key={photo.id || idx}
               onClick={() => onSelectPhoto && onSelectPhoto(photo)}
-              className="relative aspect-4/3 rounded-xl overflow-hidden border-2 border-white shadow-md hover:shadow-xl group cursor-pointer bg-stone-100 transition-all duration-300 hover:scale-[1.02]"
+              className="relative aspect-4/3 rounded-2xl overflow-hidden border-2 border-white/90 shadow-[0_4px_16px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_45px_-6px_rgba(82,1,34,0.22)] hover:-translate-y-2 hover:border-[#e05318]/50 group cursor-pointer bg-stone-100 transition-all duration-300 ease-out"
             >
               <img
                 src={photo.url}
                 alt={photo.title || 'Hotel Gallery'}
-                className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
+                className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
                 loading="lazy"
                 onError={(e) => {
                   e.currentTarget.src = '/rajvada-entrance.webp';
                 }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3.5">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3.5">
                 <span className="text-[10px] text-amber-300 font-bold uppercase tracking-wider">
                   {photo.category}
                 </span>
-                <p className="text-xs sm:text-sm font-semibold text-white">
+                <p className="text-xs sm:text-sm font-semibold text-white drop-shadow-sm">
                   {photo.title}
                 </p>
               </div>
-              <div className="absolute top-2 right-2 p-1.5 rounded-full bg-white/90 text-[#520122] opacity-0 group-hover:opacity-100 transition-opacity shadow">
+              <div className="absolute top-2.5 right-2.5 p-1.5 rounded-full bg-white/90 text-[#520122] opacity-0 group-hover:opacity-100 transition-opacity shadow-md group-hover:scale-105">
                 <Maximize2 className="w-3.5 h-3.5" />
               </div>
             </div>

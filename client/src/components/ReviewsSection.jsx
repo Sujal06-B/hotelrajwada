@@ -118,7 +118,7 @@ export default function ReviewsSection({ profile, onSelectPhoto }) {
           {marqueeItems.map((rev, idx) => (
             <div
               key={`${rev.id}-${idx}`}
-              className="w-[310px] sm:w-[350px] shrink-0 bg-white rounded-2xl border border-stone-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_12px_32px_rgba(82,1,34,0.14)] hover:border-[#520122]/40 transition-all duration-300 p-5 flex flex-col justify-between group cursor-pointer"
+              className="w-[310px] sm:w-[350px] shrink-0 bg-white rounded-2xl border border-stone-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_24px_50px_-8px_rgba(82,1,34,0.22)] hover:-translate-y-2 hover:border-[#520122]/40 transition-all duration-300 ease-out p-5 flex flex-col justify-between group cursor-pointer"
               onClick={() => onSelectPhoto && onSelectPhoto({ url: rev.image, title: rev.title, category: 'Google Review' })}
             >
               <div>

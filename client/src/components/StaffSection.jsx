@@ -64,7 +64,7 @@ export default function StaffSection() {
           {staffMembers.map((member, idx) => (
             <div 
               key={idx}
-              className="bg-white rounded-2xl overflow-hidden border border-stone-200/90 shadow-md hover:shadow-2xl hover:border-[#520122]/30 transition-all duration-300 flex flex-col justify-between group"
+              className="bg-white rounded-2xl overflow-hidden border border-stone-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_24px_50px_-8px_rgba(82,1,34,0.22)] hover:-translate-y-2 hover:border-[#520122]/40 transition-all duration-300 ease-out flex flex-col justify-between group cursor-pointer"
             >
               <div>
                 {/* Real Demo Portrait Image */}
@@ -72,21 +72,21 @@ export default function StaffSection() {
                   <img
                     src={member.photo}
                     alt={member.name}
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover object-top group-hover:scale-108 transition-transform duration-700 ease-out"
                     loading="lazy"
                     onError={(e) => {
                       e.currentTarget.src = '/rajvada-entrance.webp';
                     }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent group-hover:from-black/75 transition-colors duration-300"></div>
                   
                   {/* Badge */}
-                  <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-bold bg-[#520122] text-white shadow-md">
+                  <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-bold bg-[#520122] text-white shadow-md group-hover:bg-[#e05318] transition-colors">
                     {member.badge}
                   </span>
 
                   {/* Experience Tag */}
-                  <span className="absolute bottom-3 right-3 px-2 py-0.5 rounded-lg text-[10px] font-semibold bg-white/90 text-[#1e293b] backdrop-blur-sm shadow">
+                  <span className="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg text-[10px] font-semibold bg-white/95 text-[#1e293b] backdrop-blur-sm shadow group-hover:bg-amber-50 group-hover:text-[#520122] transition-colors">
                     {member.exp}
                   </span>
                 </div>
@@ -115,7 +115,7 @@ export default function StaffSection() {
                     <ShieldCheck className="w-3.5 h-3.5" />
                     Verified Staff
                   </span>
-                  <span className="text-amber-500 font-bold">★★★★★</span>
+                  <span className="text-amber-500 font-bold group-hover:scale-110 transition-transform">★★★★★</span>
                 </div>
               </div>
             </div>
